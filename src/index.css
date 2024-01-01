@@ -1,13 +1,136 @@
-body {
+html body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navbar Styling */
+.navBar {
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+.navButtonsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navButtons {
+  box-sizing: border-box;
+  height: 100%;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 350px;
+}
+
+.navbarButton {
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 70px;
+  height: 30px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbarButtonSelected {
+  background-color: rgb(58, 58, 58);
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 70px;
+  height: 30px;
+  margin: 5px;
+}
+
+@media (max-width: 495px) {
+  .logo {
+    display: none;
+  }
+}
+
+/* Homepage Styling */
+.homePageContainer {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.introContainer {
+  width: 600px;
+  height: 250px;
+  margin-top: 100px;
+  display: flex;
+}
+
+@media (max-width: 495px) {
+  .introContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.profileImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.introTextContainer {
+  /* width: 100%; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+@media (max-width: 495px) {
+  .introTextContainer {
+    margin-left: 0px;
+    align-items: center;
+  }
+}
+
+.introText {
+  /* border: solid red; */
+  text-align: start;
+}
+
+@media (max-width: 495px) {
+  .introText {
+    text-align: center;
+  }
+}
+
+.codeLink {
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+/* Socials Styling */
+
+.socialsContainer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.socials {
+  width: 300px;
+  height: 100%;
+}
+
+.socialsText {
+  font-weight: bold;
 }
