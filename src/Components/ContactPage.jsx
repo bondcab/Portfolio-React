@@ -21,7 +21,9 @@ function ContactPage() {
         <p>
           <span className="bold">GitHub:</span>{" "}
           <span className="hidden">...</span>
-          Will add later
+          <a href="https://github.com/bondcab" target="_blank" rel="noreferrer">
+            github.com/bondcab
+          </a>
         </p>
       </div>
     </div>

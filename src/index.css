@@ -36,13 +36,20 @@ html body {
   /* justify-content: flex-end; */
 }
 
+/* @media all and (max-width: 500px) {
+  .navBar {
+    height: 200px;
+    box-shadow: none;
+  }
+} */
+
 .navButtonsContainer {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-@media (max-width: 495px) {
+@media (max-width: 500px) {
   .navButtonsContainer {
     justify-content: center;
   }
@@ -159,15 +166,17 @@ html body {
 
 .introContainer {
   width: 600px;
-  height: 250px;
-  margin-top: 100px;
+  height: 100%;
   display: flex;
+  /* border: solid red; */
+  align-items: center;
 }
 
 @media (max-width: 495px) {
   .introContainer {
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
   }
 }
 
@@ -184,6 +193,8 @@ html body {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 20px;
+  /* border: solid blue; */
+  /* height: 600px; */
 }
 
 @media (max-width: 495px) {
@@ -222,6 +233,7 @@ html body {
   justify-content: center;
   transform: translateY(0px);
   margin-bottom: 30px;
+  margin-top: 100px;
 }
 
 .socials {
@@ -248,122 +260,125 @@ html body {
 .aboutPageContainer {
   /* height: 600px; */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   height: 80vh;
 }
 
-.aboutContainer {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+.aboutTextContainer {
+  border: solid red;
+  width: 50%;
+
+  margin-top: 100px;
 }
 
-.aboutTextContainer {
+.introTextContainer {
   box-sizing: border-box;
   padding: 10px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.skillsContainer {
+  border: solid blue;
+}
+
+.frontEndSkills {
+  border: solid red;
+  width: 300px;
+  height: 500px;
+}
+
+.backEndSkills {
+  border: solid red;
+  width: 300px;
+  height: 500px;
+}
+
+.testingSkills {
+  border: solid red;
+  width: 300px;
+  height: 500px;
+}
+
+.skillTechnologies {
+  border: solid green;
+  display: flex;
+}
+
+.skill {
+  display: flex;
+  justify-content: flex-start;
+
+  border: solid red;
   align-items: center;
-  width: 100%;
 }
 
-.aboutTable {
-  box-sizing: border-box;
-  width: 100%;
+.skillsText {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.aboutHeadings {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
+.htmlIcon {
+  width: 45px;
+  height: 45px;
+  margin-left: 62px;
 }
 
-.aboutHeading {
-  box-sizing: border-box;
-  height: 30px;
-  /* border: solid red; */
-  /* margin: 10px; */
+.mongoIcon {
+  width: 59px;
+  margin-left: 14px;
 }
 
-.skillsHeading {
-  box-sizing: border-box;
-  height: 30px;
-
-  margin: 10px;
-  text-align: start;
+.postmanIcon {
+  width: 55px;
+  margin-left: 40px;
 }
 
-.yearsHeading {
-  box-sizing: border-box;
-  height: 30px;
-  margin: 10px;
+.apiIcon {
+  width: 80px;
+  margin-left: 18px;
 }
 
-.expertiseHeading {
-  box-sizing: border-box;
-  height: 30px;
-  margin: 10px;
-  text-align: end;
+.nodeIcon {
+  width: 50px;
+  margin-left: 38px;
 }
 
-@media (max-width: 600px) {
-  .skillsHeading {
-    height: 50px;
-    display: flex;
-    align-items: flex-end;
-  }
-  .yearsHeading {
-    height: 50px;
-    display: flex;
-    align-items: flex-end;
-  }
-  .expertiseHeading {
-    height: 50px;
-    display: flex;
-    align-items: flex-end;
-  }
+.mongooseIcon {
+  width: 55px;
+  margin-left: 18px;
 }
 
-.aboutSkill1 {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
+.cssIcon {
+  width: 45px;
+  height: 45px;
+  margin-left: 78px;
 }
 
-.years {
-  width: 100%;
-  margin: 10px;
+.jsIcon {
+  width: 45px;
+  height: 45px;
+  margin-left: 20px;
 }
 
-.frontEnd {
-  min-width: 83px;
-  text-align: start;
-  margin: 10px;
+.tsIcon {
+  width: 43px;
+  height: 43px;
+  margin-left: 20px;
 }
 
-.backEnd {
-  margin: 10px;
-  width: 100%;
+.bootstrapIcon {
+  width: 54px;
+  margin-left: 22px;
 }
 
-.testing {
-  margin: 10px;
-  width: 240px;
-  text-align: end;
-}
-
-@media (max-width: 600px) {
-  .backEnd {
-    width: 100px;
-  }
-
-  .testing {
-    max-width: 150px;
-  }
+.reactIcon {
+  width: 54px;
+  margin-left: 59px;
 }
 
 .downloadContainer {
@@ -384,18 +399,6 @@ html body {
   margin: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-}
-
-.city {
-  width: 700px;
-  transform: translate(-22px);
-}
-
-@media (max-width: 730px) {
-  .city {
-    width: 95%;
-    transform: translate(-3%);
-  }
 }
 
 /* Work Page Styling */
