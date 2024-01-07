@@ -12,7 +12,7 @@ function AboutPage() {
         </p>
       </div>
       <div className="skillsContainer">
-        <h2>Skills</h2>
+        {/* <h2 className="skillsHeading">Skills</h2> */}
         <div className="skillTechnologies">
           <div className="frontEndSkills">
             <h3>Front-End</h3>
@@ -75,32 +75,9 @@ function AboutPage() {
                 className="mongooseIcon"
               />
             </div>
-          </div>
-          <div className="testingSkills">
-            <h3>Testing</h3>
             <div className="skill">
-              <p className="skillsText">Postman</p>
-              <img
-                src="postman.png"
-                alt="Postman logo"
-                className="postmanIcon"
-              />
-            </div>
-            <div className="skill">
-              <p className="skillsText">REST API</p>
-              <img src="rest.png" alt="API icon" className="apiIcon" />
-            </div>
-            <div className="skill">
-              <p className="skillsText">Node.JS</p>
-              <img src="node.png" alt="NodeJS logo" className="nodeIcon" />
-            </div>
-            <div className="skill">
-              <p className="skillsText">Mongoose</p>
-              <img
-                src="mongoose.png"
-                alt="Mongoose logo"
-                className="mongooseIcon"
-              />
+              <p className="skillsText">AWS</p>
+              <img src="awsLogo.png" alt="AWS logo" className="awsIcon" />
             </div>
           </div>
         </div>
