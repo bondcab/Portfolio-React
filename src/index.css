@@ -164,6 +164,20 @@ html body {
   justify-content: center;
 }
 
+/* @keyframes helloWorldOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.helloWorld {
+  animation: 4s helloWorldOpacity ease-in;
+} */
+
 .introContainer {
   width: 600px;
   height: 100%;
@@ -231,9 +245,16 @@ html body {
   height: 100px;
   display: flex;
   justify-content: center;
-  transform: translateY(0px);
   margin-bottom: 30px;
   margin-top: 100px;
+  transform: translateY(200px);
+  padding-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+  .socialsContainer {
+    transform: translateY(100vh);
+  }
 }
 
 .socials {
@@ -267,10 +288,19 @@ html body {
 }
 
 .aboutTextContainer {
-  border: solid red;
-  width: 50%;
-
+  width: 680px;
   margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: start;
+  padding: 20px;
+  border: solid #d3d3d35a;
+  border-radius: 30px;
+}
+
+@media (max-width: 700px) {
+  .aboutTextContainer {
+    width: 90%;
+  }
 }
 
 .introTextContainer {
@@ -282,38 +312,65 @@ html body {
   width: 100%;
 }
 
+.skillsHeading {
+  background-color: white;
+  width: 150px;
+  border-radius: 12px;
+}
+
 .skillsContainer {
-  border: solid blue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d3d3d35a;
 }
 
 .frontEndSkills {
-  border: solid red;
   width: 300px;
   height: 500px;
+  margin-right: 50px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
 }
 
 .backEndSkills {
-  border: solid red;
   width: 300px;
   height: 500px;
-}
-
-.testingSkills {
-  border: solid red;
-  width: 300px;
-  height: 500px;
+  margin-left: 50px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
 }
 
 .skillTechnologies {
-  border: solid green;
   display: flex;
+  width: 680px;
+  justify-content: center;
+  padding: 50px;
+}
+
+@media (max-width: 700px) {
+  .skillTechnologies {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frontEndSkills {
+    margin-right: 0px;
+  }
+
+  .backEndSkills {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
 }
 
 .skill {
   display: flex;
   justify-content: flex-start;
-
-  border: solid red;
   align-items: center;
 }
 
@@ -379,6 +436,11 @@ html body {
 .reactIcon {
   width: 54px;
   margin-left: 59px;
+}
+
+.awsIcon {
+  width: 54px;
+  margin-left: 70px;
 }
 
 .downloadContainer {
@@ -529,7 +591,7 @@ a:active {
 }
 
 .workSection {
-  background-color: lightgrey;
+  background-color: #d3d3d35a;
   padding-bottom: 100px;
 }
 
@@ -638,6 +700,14 @@ a:active {
   width: 41px;
   transform: translateY(2px);
   margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.caseStudy {
+  width: 47px;
+  transform: translateY(2px);
+  margin-left: 13px;
   margin-right: 10px;
   margin-top: 10px;
 }
