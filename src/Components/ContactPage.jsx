@@ -26,6 +26,11 @@ function ContactPage() {
           </a>
         </p>
       </div>
+      <div className="downloadContainer">
+        <a href="resume.pdf" download>
+          <button className="downloadButton">Download my CV</button>
+        </a>
+      </div>
     </div>
   );
 }
