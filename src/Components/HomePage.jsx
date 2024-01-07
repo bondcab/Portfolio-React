@@ -11,7 +11,7 @@ function HomePage({ setHome, setAbout, setWork, setContact }) {
       <div className="introContainer">
         <img src="portrait.jpeg" alt="profile Pic" className="profileImage" />
         <div className="introTextContainer">
-          <h2>Hello World</h2>
+          <h2 className="helloWorld">Hello World</h2>
           <p className="introText">
             My name is Chris Bond. I am a web developer from the UK
           </p>

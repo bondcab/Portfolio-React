@@ -36,13 +36,20 @@ html body {
   /* justify-content: flex-end; */
 }
 
+/* @media all and (max-width: 500px) {
+  .navBar {
+    height: 200px;
+    box-shadow: none;
+  }
+} */
+
 .navButtonsContainer {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-@media (max-width: 495px) {
+@media (max-width: 500px) {
   .navButtonsContainer {
     justify-content: center;
   }
@@ -157,17 +164,33 @@ html body {
   justify-content: center;
 }
 
+/* @keyframes helloWorldOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.helloWorld {
+  animation: 4s helloWorldOpacity ease-in;
+} */
+
 .introContainer {
   width: 600px;
-  height: 250px;
-  margin-top: 100px;
+  height: 100%;
   display: flex;
+  /* border: solid red; */
+  align-items: center;
 }
 
 @media (max-width: 495px) {
   .introContainer {
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
   }
 }
 
@@ -184,6 +207,8 @@ html body {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 20px;
+  /* border: solid blue; */
+  /* height: 600px; */
 }
 
 @media (max-width: 495px) {
@@ -220,8 +245,16 @@ html body {
   height: 100px;
   display: flex;
   justify-content: center;
-  transform: translateY(0px);
   margin-bottom: 30px;
+  margin-top: 100px;
+  transform: translateY(200px);
+  padding-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+  .socialsContainer {
+    transform: translateY(100vh);
+  }
 }
 
 .socials {
@@ -248,122 +281,166 @@ html body {
 .aboutPageContainer {
   /* height: 600px; */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   height: 80vh;
 }
 
-.aboutContainer {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+.aboutTextContainer {
+  width: 680px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: start;
+  padding: 20px;
+  border: solid #d3d3d35a;
+  border-radius: 30px;
 }
 
-.aboutTextContainer {
+@media (max-width: 700px) {
+  .aboutTextContainer {
+    width: 90%;
+  }
+}
+
+.introTextContainer {
   box-sizing: border-box;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
-}
-
-.aboutTable {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.aboutHeadings {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-}
-
-.aboutHeading {
-  box-sizing: border-box;
-  height: 30px;
-  /* border: solid red; */
-  /* margin: 10px; */
 }
 
 .skillsHeading {
-  box-sizing: border-box;
-  height: 30px;
-
-  margin: 10px;
-  text-align: start;
+  background-color: white;
+  width: 150px;
+  border-radius: 12px;
 }
 
-.yearsHeading {
-  box-sizing: border-box;
-  height: 30px;
-  margin: 10px;
-}
-
-.expertiseHeading {
-  box-sizing: border-box;
-  height: 30px;
-  margin: 10px;
-  text-align: end;
-}
-
-@media (max-width: 600px) {
-  .skillsHeading {
-    height: 50px;
-    display: flex;
-    align-items: flex-end;
-  }
-  .yearsHeading {
-    height: 50px;
-    display: flex;
-    align-items: flex-end;
-  }
-  .expertiseHeading {
-    height: 50px;
-    display: flex;
-    align-items: flex-end;
-  }
-}
-
-.aboutSkill1 {
-  box-sizing: border-box;
+.skillsContainer {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d3d3d35a;
 }
 
-.years {
-  width: 100%;
-  margin: 10px;
+.frontEndSkills {
+  width: 300px;
+  height: 500px;
+  margin-right: 50px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
 }
 
-.frontEnd {
-  min-width: 83px;
-  text-align: start;
-  margin: 10px;
+.backEndSkills {
+  width: 300px;
+  height: 500px;
+  margin-left: 50px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
 }
 
-.backEnd {
-  margin: 10px;
-  width: 100%;
+.skillTechnologies {
+  display: flex;
+  width: 680px;
+  justify-content: center;
+  padding: 50px;
 }
 
-.testing {
-  margin: 10px;
-  width: 240px;
-  text-align: end;
-}
-
-@media (max-width: 600px) {
-  .backEnd {
-    width: 100px;
+@media (max-width: 700px) {
+  .skillTechnologies {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .testing {
-    max-width: 150px;
+  .frontEndSkills {
+    margin-right: 0px;
   }
+
+  .backEndSkills {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+}
+
+.skill {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skillsText {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.htmlIcon {
+  width: 45px;
+  height: 45px;
+  margin-left: 62px;
+}
+
+.mongoIcon {
+  width: 59px;
+  margin-left: 14px;
+}
+
+.postmanIcon {
+  width: 55px;
+  margin-left: 40px;
+}
+
+.apiIcon {
+  width: 80px;
+  margin-left: 18px;
+}
+
+.nodeIcon {
+  width: 50px;
+  margin-left: 38px;
+}
+
+.mongooseIcon {
+  width: 55px;
+  margin-left: 18px;
+}
+
+.cssIcon {
+  width: 45px;
+  height: 45px;
+  margin-left: 78px;
+}
+
+.jsIcon {
+  width: 45px;
+  height: 45px;
+  margin-left: 20px;
+}
+
+.tsIcon {
+  width: 43px;
+  height: 43px;
+  margin-left: 20px;
+}
+
+.bootstrapIcon {
+  width: 54px;
+  margin-left: 22px;
+}
+
+.reactIcon {
+  width: 54px;
+  margin-left: 59px;
+}
+
+.awsIcon {
+  width: 54px;
+  margin-left: 70px;
 }
 
 .downloadContainer {
@@ -384,18 +461,6 @@ html body {
   margin: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-}
-
-.city {
-  width: 700px;
-  transform: translate(-22px);
-}
-
-@media (max-width: 730px) {
-  .city {
-    width: 95%;
-    transform: translate(-3%);
-  }
 }
 
 /* Work Page Styling */
@@ -526,7 +591,7 @@ a:active {
 }
 
 .workSection {
-  background-color: lightgrey;
+  background-color: #d3d3d35a;
   padding-bottom: 100px;
 }
 
@@ -635,6 +700,14 @@ a:active {
   width: 41px;
   transform: translateY(2px);
   margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.caseStudy {
+  width: 47px;
+  transform: translateY(2px);
+  margin-left: 13px;
   margin-right: 10px;
   margin-top: 10px;
 }
