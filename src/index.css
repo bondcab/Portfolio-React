@@ -463,6 +463,10 @@ html body {
   font-weight: bold;
 }
 
+.downloadButton:hover {
+  width: 126px;
+  height: 42px;
+}
 /* Work Page Styling */
 
 a {
@@ -742,6 +746,7 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .contactInfoContainer {
