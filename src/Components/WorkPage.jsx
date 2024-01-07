@@ -12,6 +12,7 @@ function WorkPage() {
   const [angularGitHovered, setAngularGitHovered] = useState(false);
   const [angularSiteHovered, setAngularSiteHovered] = useState(false);
   const [apiDocHovered, setApiDocHovered] = useState(false);
+  const [bondCaseStudyHovered, setBondCasyStudyHovered] = useState(false);
 
   function handleMouseOver0() {
     setApiDocHovered(true);
@@ -99,6 +100,14 @@ function WorkPage() {
 
   function handleMouseOut10() {
     setAngularSiteHovered(false);
+  }
+
+  function handleMouseOver11() {
+    setBondCasyStudyHovered(true);
+  }
+
+  function handleMouseOut11() {
+    setBondCasyStudyHovered(false);
   }
 
   return (
@@ -259,6 +268,11 @@ function WorkPage() {
                   <h4>Link to myBond Flix React app live site</h4>
                 </div>
               ) : null}
+              {bondCaseStudyHovered ? (
+                <div className="pokemonGitPopup">
+                  <h4>Link to myBond Flix case study</h4>
+                </div>
+              ) : null}
               <a
                 href="https://github.com/bondcab/myBondFlix-client"
                 target="_blank"
@@ -283,6 +297,19 @@ function WorkPage() {
                   src="web.png"
                   onMouseOver={handleMouseOver5}
                   onMouseOut={handleMouseOut5}
+                />
+              </a>
+              <a
+                href="https://mybondflix-casestudy.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="caseStudy"
+                  alt="myBondFlix case study"
+                  src="document.png"
+                  onMouseOver={handleMouseOver11}
+                  onMouseOut={handleMouseOut11}
                 />
               </a>
             </div>
