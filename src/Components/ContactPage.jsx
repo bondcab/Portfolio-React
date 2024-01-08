@@ -16,7 +16,7 @@ function ContactPage() {
         <p>
           <span className="bold">LinkedIn:</span>{" "}
           <span className="hidden">...</span>
-          Will add later
+          https://www.linkedin.com/in/cabond/
         </p>
         <p>
           <span className="bold">GitHub:</span>{" "}
