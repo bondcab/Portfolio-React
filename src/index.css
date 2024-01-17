@@ -874,7 +874,7 @@ a:active {
 
 .sectionOneHeading {
   font-weight: 800;
-  margin-top: 5px;
+  margin-top: 30px;
   margin-bottom: 5px;
 }
 
@@ -1080,7 +1080,7 @@ a:active {
   }
 
   .sectionOneWhite {
-    height: 105%;
+    height: 90%;
   }
 }
 
