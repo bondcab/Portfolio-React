@@ -2,16 +2,20 @@ function SectionTwo() {
   return (
     <div className="aboutPageContainer">
       <div className="aboutContainer">
-        <div className="aboutTextContainer">
-          <p className="aboutText">
-            Hello, I'm Chris—a detail-oriented and organized professional with a
-            background in 3D animation and IT support. Now exploring web
-            development, my autonomy, patience, and problem-solving skills equip
-            me to create efficient and visually engaging web solutions. I'm
-            eager to bring my strengths to your team, offering a reliable and
-            independent perspective for your projects.
-          </p>
+        <div className="aboutSectionContainer">
+          <h2 className="about">About</h2>
+          <div className="aboutTextContainer">
+            <p className="aboutText">
+              Hello, I'm Chris—a detail-oriented and organized professional with
+              a background in 3D animation and IT support. Now exploring web
+              development, my autonomy, patience, and problem-solving skills
+              equip me to create efficient and visually engaging web solutions.
+              I'm eager to bring my strengths to your team, offering a reliable
+              and independent perspective for your projects.
+            </p>
+          </div>
         </div>
+
         <div className="skillsContainer">
           {/* <h2 className="skillsHeading">Skills</h2> */}
           <div className="skillTechnologies">
