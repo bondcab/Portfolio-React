@@ -902,7 +902,13 @@ a:active {
   /* border: solid red; */
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 2em;
+  /* font-size: 2em; */
+}
+
+@media (min-width: 800px) {
+  .sectionOneSlogan {
+    font-size: 2em;
+  }
 }
 
 .sectionOneText {
@@ -1044,20 +1050,22 @@ a:active {
 
   .sectionOneTextContainer {
     width: 90%;
-    height: 600px;
+    height: 300px;
     padding-left: 3%;
     padding-right: 3%;
+    /* border: solid blue; */
   }
 
   .profilePicContainer {
     width: 90%;
     margin-top: 0px;
-    transform: translateY(30px);
+    /* transform: translateY(25px); */
+    /* border: solid red; */
   }
 
   .profileImagePic {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
   }
 
   .sectionOneTextContainer {
@@ -1073,7 +1081,7 @@ a:active {
 
   .sectionOneWhite {
     width: 90%;
-    height: 110%;
+    height: 800px;
     border-radius: 0 0 30px 30px;
     transform: translate(0px, 0px);
   }
@@ -1096,23 +1104,23 @@ a:active {
 }
 
 @media (max-width: 500px) {
-  .profileImagePic {
-    width: 250px;
-    height: 250px;
-    /* border: solid red; */
-  }
-
   .sectionOneTextContainer {
     margin-top: 100px;
     /* border: solid blue; */
-    height: 350px;
-  }
-
-  .sectionOneWhite {
-    height: 800px;
+    height: 400px;
   }
 
   .landingPageContainer {
+    height: 900px;
+  }
+}
+
+@media (max-width: 350px) {
+  .sectionOneTextContainer {
+    height: 500px;
+  }
+
+  .sectionOneWhite {
     height: 900px;
   }
 }
