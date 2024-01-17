@@ -312,9 +312,22 @@ html body {
   justify-content: center;
 }
 
+.aboutSkillsContainer {
+  /* border: solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.skillsContainer {
+  /* border: solid purple; */
+  margin-bottom: 50px;
+}
+
 .aboutTextContainer {
   width: 550px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 50px;
   text-align: start;
   padding: 20px;
@@ -334,13 +347,14 @@ html body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: solid blue; */
 }
 
 .about {
   /* border: solid green; */
   font-weight: 700;
   font-style: italic;
-  font-size: 2em;
+  font-size: 2.5em;
   color: white;
   font-family: "Montserrat", sans-serif;
   margin-top: 200px;
@@ -407,6 +421,10 @@ html body {
   .skillsContainer {
     width: 100%;
   }
+
+  .about {
+    margin-top: 0px;
+  }
 }
 
 .frontEndSkills {
@@ -431,7 +449,8 @@ html body {
   display: flex;
   width: 680px;
   justify-content: center;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 @media (max-width: 700px) {
@@ -1045,7 +1064,7 @@ a:active {
   .landingPageContainer {
     flex-direction: column;
     align-items: center;
-    height: 1100px;
+    height: 900px;
   }
 
   .sectionOneTextContainer {
@@ -1059,6 +1078,7 @@ a:active {
   .profilePicContainer {
     width: 90%;
     margin-top: 0px;
+    height: 300px;
     /* transform: translateY(25px); */
     /* border: solid red; */
   }
