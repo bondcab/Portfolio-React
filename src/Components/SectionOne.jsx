@@ -6,7 +6,7 @@ function SectionOne() {
         <h2 className="sectionOneSlogan">
           My name is Chris Bond. I am a web developer from the UK
         </h2>
-        <p className="sectionOneText">Check out some of my code</p>
+        <p className="sectionOneText">Check out some of my code below</p>
 
         <button className="sectionOneButton" onClick={""} type="button">
           Projects
