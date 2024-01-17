@@ -1076,11 +1076,11 @@ a:active {
   .sectionOneTextContainer {
     margin-top: 100px;
     /* border: solid blue; */
-    height: 475px;
+    height: 400px;
   }
 
   .sectionOneWhite {
-    height: 90%;
+    height: 800px;
   }
 }
 
