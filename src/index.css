@@ -833,7 +833,7 @@ a:active {
   /* flex-direction: column;
   justify-content: flex-end; */
   background-color: #42c4e9;
-  /* border-bottom: solid red; */
+  border-bottom: solid red;
 }
 
 .sectionOneTextContainer {
@@ -1031,7 +1031,7 @@ a:active {
   .profilePicContainer {
     width: 90%;
     margin-top: 0px;
-    transform: translateY(-50px);
+    transform: translateY(-30px);
   }
 
   .profileImagePic {
@@ -1081,6 +1081,10 @@ a:active {
 
   .sectionOneWhite {
     height: 800px;
+  }
+
+  .landingPageContainer {
+    height: 900px;
   }
 }
 
