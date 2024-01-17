@@ -306,15 +306,15 @@ html body {
 }
 
 .aboutContainer {
-  /* border: solid red; */
+  border: solid red;
   display: flex;
   width: 90%;
   justify-content: center;
 }
 
 .aboutTextContainer {
-  width: 680px;
-  margin-top: 200px;
+  width: 550px;
+  margin-top: 20px;
   margin-bottom: 50px;
   text-align: start;
   padding: 20px;
@@ -325,7 +325,25 @@ html body {
   /* border: solid green; */
   margin-right: 3%;
   height: 500px;
-  border: solid red;
+  border: solid orange;
+}
+
+.aboutSectionContainer {
+  border: solid blue;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about {
+  border: solid green;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2em;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 200px;
 }
 
 .aboutText {
@@ -748,7 +766,6 @@ a:active {
 }
 
 .linkContainer {
-  /* border: solid red; */
   border-top: solid rgba(0, 0, 0, 0.3) 1px;
   height: 130px;
   display: flex;
@@ -834,7 +851,7 @@ a:active {
   /* flex-direction: column;
   justify-content: flex-end; */
   background-color: #42c4e9;
-  border-bottom: solid red;
+  /* border-bottom: solid red; */
 }
 
 .sectionOneTextContainer {
@@ -885,6 +902,7 @@ a:active {
   /* border: solid red; */
   margin-top: 5px;
   margin-bottom: 5px;
+  font-size: 2em;
 }
 
 .sectionOneText {
