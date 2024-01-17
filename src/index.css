@@ -1108,6 +1108,7 @@ a:active {
   .sectionOneTextContainer {
     margin-top: 100px;
     border: solid blue;
+    height: 500px;
   }
 
   .sectionOneWhite {
