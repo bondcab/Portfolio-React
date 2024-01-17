@@ -21,8 +21,6 @@ function SectionOne() {
       </div>
       <div className="sectionOneWhite"></div>
       <div className="sectionOneGrey"></div>
-
-      {/* <div className="sectionOneBottomColour"></div> */}
     </div>
   );
 }
