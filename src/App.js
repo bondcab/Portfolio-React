@@ -7,6 +7,8 @@ import ContactPage from "./Components/ContactPage";
 import { useState } from "react";
 import SectionOne from "./Components/SectionOne";
 import SectionTwo from "./Components/SectionTwo";
+import SectionThree from "./Components/SectionThree";
+import SectionFour from "./Components/SectionFour";
 
 function App() {
   const [home, setHome] = useState(true);
@@ -28,6 +30,8 @@ function App() {
       />
       {home ? <SectionOne /> : null}
       {home ? <SectionTwo /> : null}
+      {home ? <SectionThree /> : null}
+      {home ? <SectionFour /> : null}
       {/* {home ? (
         <HomePage
           setHome={setHome}
