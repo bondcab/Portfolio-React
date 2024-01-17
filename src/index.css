@@ -874,24 +874,24 @@ a:active {
 
 .sectionOneHeading {
   font-weight: 800;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .sectionOneSlogan {
   font-weight: 700;
   font-style: italic;
   /* border: solid red; */
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .sectionOneText {
   font-weight: 600;
   font-size: 20px;
   /* border: solid blue; */
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .sectionOneButton {
