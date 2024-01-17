@@ -325,6 +325,7 @@ html body {
   /* border: solid green; */
   margin-right: 3%;
   height: 500px;
+  border: solid red;
 }
 
 .aboutText {
@@ -1085,6 +1086,10 @@ a:active {
 
   .landingPageContainer {
     height: 900px;
+  }
+
+  .aboutTextContainer {
+    margin-top: 90px;
   }
 }
 
