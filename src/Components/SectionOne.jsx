@@ -3,9 +3,9 @@ function SectionOne() {
     <div className="landingPageContainer">
       <div className="sectionOneTextContainer">
         <h1 className="sectionOneHeading">Hello World </h1>
-        <h1 className="sectionOneSlogan">
+        <h2 className="sectionOneSlogan">
           My name is Chris Bond. I am a web developer from the UK
-        </h1>
+        </h2>
         <p className="sectionOneText">Check out some of my code</p>
 
         <button className="sectionOneButton" onClick={""} type="button">
