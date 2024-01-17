@@ -874,17 +874,24 @@ a:active {
 
 .sectionOneHeading {
   font-weight: 800;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .sectionOneSlogan {
   font-weight: 700;
   font-style: italic;
   /* border: solid red; */
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .sectionOneText {
   font-weight: 600;
   font-size: 20px;
+  /* border: solid blue; */
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .sectionOneButton {
@@ -899,45 +906,6 @@ a:active {
   border-radius: 15px;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
-}
-
-.availableFor {
-  font-size: 15px;
-  margin-top: 30px;
-}
-
-.appIconsContainer {
-  /* border: solid blue; */
-  display: flex;
-  /* height: 50px; */
-}
-
-.iconText {
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.sectionOneAppleIcon {
-  width: 35px;
-}
-
-.sectionOneAndroidIcon {
-  width: 36px;
-  fill: #42c4e9;
-}
-
-.iosContainer {
-  /* border: solid red; */
-  width: 110px;
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-}
-
-.iphoneText {
-  font-size: 15px;
-  font-weight: 500;
-  transform: translate(3px, 8px);
 }
 
 .sectionOneWhite {
