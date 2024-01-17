@@ -306,7 +306,7 @@ html body {
 }
 
 .aboutContainer {
-  border: solid red;
+  /* border: solid red; */
   display: flex;
   width: 90%;
   justify-content: center;
@@ -325,11 +325,11 @@ html body {
   /* border: solid green; */
   margin-right: 3%;
   height: 500px;
-  border: solid orange;
+  /* border: solid orange; */
 }
 
 .aboutSectionContainer {
-  border: solid blue;
+  /* border: solid blue; */
   justify-content: flex-end;
   display: flex;
   flex-direction: column;
@@ -337,7 +337,7 @@ html body {
 }
 
 .about {
-  border: solid green;
+  /* border: solid green; */
   font-weight: 700;
   font-style: italic;
   font-size: 2em;
@@ -925,6 +925,8 @@ a:active {
   border-radius: 15px;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
+  min-height: 40px;
+  margin-top: 30px;
 }
 
 .sectionOneWhite {
@@ -1083,6 +1085,14 @@ a:active {
     transform: translate(0px, 0px);
     display: none;
   }
+
+  .about {
+    margin-top: 0px;
+  }
+
+  .aboutTextContainer {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1104,10 +1114,6 @@ a:active {
 
   .landingPageContainer {
     height: 900px;
-  }
-
-  .aboutTextContainer {
-    margin-top: 90px;
   }
 }
 
