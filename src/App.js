@@ -7,6 +7,7 @@ import Socials from "./Components/Socials";
 import ContactPage from "./Components/ContactPage";
 import { useState } from "react";
 import SectionOne from "./Components/SectionOne";
+import SectionTwo from "./Components/SectionTwo";
 
 function App() {
   const [home, setHome] = useState(true);
@@ -27,14 +28,15 @@ function App() {
         work={work}
       />
       {home ? <SectionOne /> : null}
-      {home ? (
+      {home ? <SectionTwo /> : null}
+      {/* {home ? (
         <HomePage
           setHome={setHome}
           setAbout={setAbout}
           setContact={setContact}
           setWork={setWork}
         />
-      ) : null}
+      ) : null} */}
       {about ? <AboutPage /> : null}
       {work ? <WorkPage /> : null}
       {contact ? <ContactPage /> : null}
