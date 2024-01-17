@@ -6,6 +6,7 @@ import NavBar from "./Components/NavBar";
 import Socials from "./Components/Socials";
 import ContactPage from "./Components/ContactPage";
 import { useState } from "react";
+import SectionOne from "./Components/SectionOne";
 
 function App() {
   const [home, setHome] = useState(true);
@@ -25,6 +26,7 @@ function App() {
         contact={contact}
         work={work}
       />
+      {home ? <SectionOne /> : null}
       {home ? (
         <HomePage
           setHome={setHome}
