@@ -1,6 +1,5 @@
 import "./App.css";
 import NavBar from "./Components/NavBar";
-import Socials from "./Components/Socials";
 import { useState } from "react";
 import SectionOne from "./Components/SectionOne";
 import SectionTwo from "./Components/SectionTwo";
@@ -25,12 +24,30 @@ function App() {
         contact={contact}
         work={work}
       />
-      <SectionOne />
-      <SectionTwo />
-      <SectionThree />
-      <SectionFour />
-
-      <Socials />
+      <SectionOne
+        setHome={setHome}
+        setAbout={setAbout}
+        setContact={setContact}
+        setWork={setWork}
+      />
+      <SectionTwo
+        setHome={setHome}
+        setAbout={setAbout}
+        setContact={setContact}
+        setWork={setWork}
+      />
+      <SectionThree
+        setHome={setHome}
+        setAbout={setAbout}
+        setContact={setContact}
+        setWork={setWork}
+      />
+      <SectionFour
+        setHome={setHome}
+        setAbout={setAbout}
+        setContact={setContact}
+        setWork={setWork}
+      />
     </div>
   );
 }
