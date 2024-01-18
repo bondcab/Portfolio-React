@@ -5,28 +5,29 @@ function SectionOne({ setAbout, setHome, setContact, setWork }) {
   const domRefHome = useRef();
 
   useEffect(() => {
+    const currentRef = domRefHome.current;
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => setVisible(entry.isIntersecting));
     });
 
-    if (domRefHome.current) {
-      observer.observe(domRefHome.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
+
     if (visible) {
-      if (visible) {
-        setHome(true);
-        setAbout(false);
-        setContact(false);
-        setWork(false);
-      }
+      setHome(true);
+      setAbout(false);
+      setContact(false);
+      setWork(false);
     }
 
     return () => {
-      if (domRefHome.current) {
-        observer.unobserve(domRefHome.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
-  }, []);
+  }, [domRefHome, visible, setAbout, setContact, setHome, setWork]);
 
   return (
     <div
