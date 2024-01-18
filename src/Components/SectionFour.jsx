@@ -16,13 +16,23 @@ function SectionFour() {
         <p className="contactInfoText">
           <span className="bold">LinkedIn:</span>{" "}
           <span className="hidden">...</span>
-          https://www.linkedin.com/in/cabond/
+          <a href="https://www.linkedin.com/in/cabond/">
+            <img
+              src="linkedin.svg"
+              alt="linkedin-logo"
+              className="linkedinLogoContact"
+            />
+          </a>
         </p>
         <p className="contactInfoText">
           <span className="bold">GitHub:</span>{" "}
           <span className="hidden">...</span>
-          <a href="https://github.com/bondcab" target="_blank" rel="noreferrer">
-            github.com/bondcab
+          <a href="https://github.com/bondcab">
+            <img
+              src="github.svg"
+              alt="github-logo"
+              className="githubLogoContact"
+            />
           </a>
         </p>
       </div>
