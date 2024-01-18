@@ -38,7 +38,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
         observer.unobserve(domRefWorkIn.current);
       }
     };
-  }, [visible]);
+  }, []);
 
   function handleMouseOver0() {
     setApiDocHovered(true);
