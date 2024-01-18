@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 function NavBarButtons({
@@ -10,11 +11,22 @@ function NavBarButtons({
   contact,
   work,
 }) {
+  const [homeClicked, setHomeClicked] = useState(false);
+  const [aboutClicked, setAboutClicked] = useState(false);
+  const [workClicked, setWorkClicked] = useState(false);
+  const [contactClicked, setContactClicked] = useState(false);
+
   function handleHomeClick() {
     setHome(true);
     setAbout(false);
     setContact(false);
     setWork(false);
+    setHomeClicked(true);
+    function clickReset() {
+      setHomeClicked(false);
+    }
+
+    setTimeout(clickReset, 500);
   }
 
   function handleAboutClick() {
@@ -22,6 +34,12 @@ function NavBarButtons({
     setAbout(true);
     setContact(false);
     setWork(false);
+    setAboutClicked(true);
+    function clickReset() {
+      setAboutClicked(false);
+    }
+
+    setTimeout(clickReset, 500);
   }
 
   function handleContactClick() {
@@ -29,6 +47,13 @@ function NavBarButtons({
     setAbout(false);
     setContact(true);
     setWork(false);
+    setContactClicked(true);
+
+    function clickReset() {
+      setContactClicked(false);
+    }
+
+    setTimeout(clickReset, 500);
   }
 
   function handleWorkClick() {
@@ -36,6 +61,13 @@ function NavBarButtons({
     setAbout(false);
     setContact(false);
     setWork(true);
+    setWorkClicked(true);
+
+    function clickReset() {
+      setWorkClicked(false);
+    }
+
+    setTimeout(clickReset, 500);
   }
 
   return (
@@ -45,6 +77,11 @@ function NavBarButtons({
           to="#sectionOne"
           smooth={true}
           duration={500}
+          id={
+            homeClicked || workClicked || aboutClicked || contactClicked
+              ? "navbarButtonCopy"
+              : null
+          }
           className={home ? "navbarHomeSelected" : "navbarButton"}
           onClick={handleHomeClick}
         >
@@ -54,6 +91,12 @@ function NavBarButtons({
           to="#sectionTwo"
           smooth={true}
           duration={500}
+          offset={-100}
+          id={
+            homeClicked || workClicked || aboutClicked || contactClicked
+              ? "navbarButtonCopy"
+              : null
+          }
           className={about ? "navbarAboutSelected" : "navbarButton"}
           onClick={handleAboutClick}
         >
@@ -64,6 +107,11 @@ function NavBarButtons({
           smooth={true}
           duration={500}
           offset={-100}
+          id={
+            homeClicked || workClicked || aboutClicked || contactClicked
+              ? "navbarButtonCopy"
+              : null
+          }
           className={work ? "navbarWorkSelected" : "navbarButton"}
           onClick={handleWorkClick}
         >
@@ -73,7 +121,11 @@ function NavBarButtons({
           to="#sectionFour"
           smooth={true}
           duration={500}
-          offset={-100}
+          id={
+            homeClicked || workClicked || aboutClicked || contactClicked
+              ? "navbarButtonCopy"
+              : null
+          }
           className={contact ? "navbarContactSelected" : "navbarButton"}
           onClick={handleContactClick}
         >
