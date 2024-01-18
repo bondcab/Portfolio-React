@@ -29,14 +29,6 @@ function App() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
-      {/* {home ? (
-        <HomePage
-          setHome={setHome}
-          setAbout={setAbout}
-          setContact={setContact}
-          setWork={setWork}
-        />
-      ) : null} */}
 
       <Socials />
     </div>
