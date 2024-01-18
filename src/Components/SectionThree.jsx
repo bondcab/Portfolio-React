@@ -15,15 +15,17 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
   const [bondCaseStudyHovered, setBondCasyStudyHovered] = useState(false);
 
   const [visible, setVisible] = useState(false);
-  const domRefWorkIn = useRef();
+  const domRefWork = useRef();
 
   useEffect(() => {
+    const currentRef = domRefWork.current;
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => setVisible(entry.isIntersecting));
     });
 
-    if (domRefWorkIn.current) {
-      observer.observe(domRefWorkIn.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     if (visible) {
@@ -34,11 +36,11 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
     }
 
     return () => {
-      if (domRefWorkIn.current) {
-        observer.unobserve(domRefWorkIn.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
-  }, []);
+  }, [domRefWork, visible, setAbout, setContact, setHome, setWork]);
 
   function handleMouseOver0() {
     setApiDocHovered(true);
@@ -145,7 +147,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
           </h1>
         </div>
 
-        <div className="grid" ref={domRefWorkIn}>
+        <div className="grid" ref={domRefWork}>
           <div className="grid__item">
             <h2 className="project-titles">Pokedex App</h2>
             <p className="workText">
@@ -466,7 +468,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
 
             <div className="angularImageContainer">
               <p className="technologies">
-                <span className="bold" ref={domRefWorkIn}>
+                <span className="bold" ref={domRefWork}>
                   Technologies Used:{" "}
                 </span>
                 <br></br>
