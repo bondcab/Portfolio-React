@@ -1,6 +1,6 @@
 function SectionOne() {
   return (
-    <div className="landingPageContainer">
+    <div className="landingPageContainer" id="#sectionOne">
       <div className="sectionOneTextContainer">
         <h1 className="sectionOneHeading">Hello World </h1>
         <h2 className="sectionOneSlogan">
