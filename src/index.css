@@ -1127,14 +1127,25 @@ a:active {
 .landingPageContainer {
   display: flex;
   background-color: #42c4e9;
-  animation: opacityReveal 1s linear;
+  /* animation: opacityReveal 1s linear; */
 }
 
 .landingPageContainerReveal {
   display: flex;
   background-color: #42c4e9;
-  opacity: 0;
-  animation: opacityHide 1s linear;
+  /* opacity: 0;
+  animation: opacityHide 1s linear; */
+}
+
+@media (min-width: 600px) {
+  .landingPageContainer {
+    animation: opacityReveal 1s linear;
+  }
+
+  .landingPageContainerReveal {
+    opacity: 0;
+    animation: opacityHide 1s linear;
+  }
 }
 
 .sectionOneTextContainer {
