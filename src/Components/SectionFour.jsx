@@ -1,6 +1,6 @@
 function SectionFour() {
   return (
-    <div className="contactPageContainer">
+    <div className="contactPageContainer" id="#sectionFour">
       <div className="contactInfoContainer">
         <h2 className="contact">Contact</h2>
 
