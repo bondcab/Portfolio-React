@@ -935,6 +935,7 @@ a:active {
   background-color: white;
   padding: 50px;
   border-radius: 30px;
+  width: 370px;
 }
 
 .hidden {
@@ -943,6 +944,36 @@ a:active {
 
 .contactInfoText {
   font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .contactInfoText {
+    font-size: 18px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .linkedInURL {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .contactInfoContainer {
+    width: 600px;
+  }
+}
+
+.githubLogoContact {
+  width: 50px;
+  transform: translate(15px, 10px);
+}
+
+.linkedinLogoContact {
+  width: 45px;
+  transform: translate(1px, 10px);
 }
 
 /* Section One */
