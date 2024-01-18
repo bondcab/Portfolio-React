@@ -1,5 +1,7 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 
+let scroll1 = scroll;
+
 function NavBarButtons({
   setHome,
   setAbout,
