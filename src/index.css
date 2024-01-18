@@ -560,6 +560,11 @@ html body {
     align-items: center;
   }
 
+  .aboutContainerReveal {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .skillsContainer {
     margin-left: 0%;
     align-self: center;
@@ -1326,6 +1331,12 @@ a:active {
     height: 900px;
   }
 
+  .landingPageContainerReveal {
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+  }
+
   .sectionOneTextContainer {
     width: 90%;
     height: 300px;
@@ -1390,6 +1401,12 @@ a:active {
   }
 
   .landingPageContainer {
+    height: 900px;
+  }
+
+  .landingPageContainerReveal {
+    flex-direction: column;
+    align-items: center;
     height: 900px;
   }
 }
