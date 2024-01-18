@@ -114,7 +114,9 @@ function SectionThree() {
     <div className="workPageContainer">
       <section className="workSection">
         <div className="workHeadingContainer">
-          <h1 className="work-heading">Work</h1>
+          <h1 className="work-heading" id="#sectionThree">
+            Work
+          </h1>
         </div>
 
         <div className="grid">
