@@ -1,9 +1,39 @@
-function SectionTwo() {
+import { useState, useRef, useEffect } from "react";
+
+function SectionTwo({ setAbout, setHome, setContact, setWork }) {
+  const [visible, setVisible] = useState(false);
+  const domRefAbout = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => setVisible(entry.isIntersecting));
+    });
+
+    if (domRefAbout.current) {
+      observer.observe(domRefAbout.current);
+    }
+
+    if (visible) {
+      setHome(false);
+      setAbout(true);
+      setContact(false);
+      setWork(false);
+    }
+
+    return () => {
+      if (domRefAbout.current) {
+        observer.unobserve(domRefAbout.current);
+      }
+    };
+  }, [visible]);
+
   return (
-    <div className="aboutPageContainer" id="#sectionTwo">
-      <div className="aboutContainer">
+    <div className="aboutPageContainer">
+      <div className={visible ? "aboutContainer" : "aboutContainerReveal"}>
         <div className="aboutSectionContainer">
-          <h2 className="about">About</h2>
+          <h2 className="about" id="#sectionTwo">
+            About
+          </h2>
           <div className="aboutTextContainer">
             <p className="aboutText">
               Hello, I'm Chris—a detail-oriented and organized professional with
@@ -21,7 +51,9 @@ function SectionTwo() {
             {/* <h2 className="skillsHeading">Skills</h2> */}
             <div className="skillTechnologies">
               <div className="frontEndSkills">
-                <h2 className="frontEnd">Front-End</h2>
+                <h2 className="frontEnd" ref={domRefAbout}>
+                  Front-End
+                </h2>
                 <div className="skill">
                   <p className="skillsText">HTML</p>
                   <img src="html.png" alt="html logo" className="htmlIcon" />
