@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
-function SectionThree() {
+function SectionThree({ setAbout, setHome, setContact, setWork }) {
   const [pokemonGitHovered, setPokemonGitHovered] = useState(false);
   const [pokemonSiteHovered, setPokemonSiteHovered] = useState(false);
   const [apiGitHovered, setApiGitHovered] = useState(false);
@@ -13,6 +13,32 @@ function SectionThree() {
   const [angularSiteHovered, setAngularSiteHovered] = useState(false);
   const [apiDocHovered, setApiDocHovered] = useState(false);
   const [bondCaseStudyHovered, setBondCasyStudyHovered] = useState(false);
+
+  const [visible, setVisible] = useState(false);
+  const domRefWorkIn = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => setVisible(entry.isIntersecting));
+    });
+
+    if (domRefWorkIn.current) {
+      observer.observe(domRefWorkIn.current);
+    }
+
+    if (visible) {
+      setHome(false);
+      setAbout(false);
+      setContact(false);
+      setWork(true);
+    }
+
+    return () => {
+      if (domRefWorkIn.current) {
+        observer.unobserve(domRefWorkIn.current);
+      }
+    };
+  }, [visible]);
 
   function handleMouseOver0() {
     setApiDocHovered(true);
@@ -112,14 +138,14 @@ function SectionThree() {
 
   return (
     <div className="workPageContainer">
-      <section className="workSection">
+      <section className={visible ? "workSection" : "workSectionReveal"}>
         <div className="workHeadingContainer">
           <h1 className="work-heading" id="#sectionThree">
             Work
           </h1>
         </div>
 
-        <div className="grid">
+        <div className="grid" ref={domRefWorkIn}>
           <div className="grid__item">
             <h2 className="project-titles">Pokedex App</h2>
             <p className="workText">
@@ -139,12 +165,14 @@ function SectionThree() {
             <div className="linkContainer">
               {pokemonGitHovered ? (
                 <div className="pokemonGitPopup">
-                  <h4>Link to Pokedex app Github repository</h4>
+                  <h4 className="popupText">
+                    Link to Pokedex app Github repository
+                  </h4>
                 </div>
               ) : null}
               {pokemonSiteHovered ? (
                 <div className="pokemonSitePopup">
-                  <h4>Link to Pokedex app live site</h4>
+                  <h4 className="popupText">Link to Pokedex app live site</h4>
                 </div>
               ) : null}
 
@@ -198,12 +226,12 @@ function SectionThree() {
             <div className="linkContainer">
               {apiGitHovered ? (
                 <div className="pokemonGitPopup">
-                  <h4>Link to API Github repository</h4>
+                  <h4 className="popupText">Link to API Github repository</h4>
                 </div>
               ) : null}
               {apiDocHovered ? (
                 <div className="pokemonGitPopup">
-                  <h4>Link to API documentation</h4>
+                  <h4 className="popupText">Link to API documentation</h4>
                 </div>
               ) : null}
               <a
@@ -262,17 +290,21 @@ function SectionThree() {
             <div className="linkContainer">
               {reactGitHovered ? (
                 <div className="pokemonGitPopup">
-                  <h4>Link to myBond Flix React app Github repository</h4>
+                  <h4 className="popupText">
+                    Link to myBond Flix React app Github repository
+                  </h4>
                 </div>
               ) : null}
               {reactSiteHovered ? (
                 <div className="pokemonGitPopup">
-                  <h4>Link to myBond Flix React app live site</h4>
+                  <h4 className="popupText">
+                    Link to myBond Flix React app live site
+                  </h4>
                 </div>
               ) : null}
               {bondCaseStudyHovered ? (
                 <div className="pokemonGitPopup">
-                  <h4>Link to myBond Flix case study</h4>
+                  <h4 className="popupText">Link to myBond Flix case study</h4>
                 </div>
               ) : null}
               <a
@@ -341,12 +373,14 @@ function SectionThree() {
             <div className="linkContainer">
               {meetGitHovered ? (
                 <div className="pokemonGitPopup">
-                  <h4>Link to Meet app Github repository</h4>
+                  <h4 className="popupText">
+                    Link to Meet app Github repository
+                  </h4>
                 </div>
               ) : null}
               {meetSiteHovered ? (
                 <div className="pokemonGitPopup">
-                  <h4>Link to Meet app live site</h4>
+                  <h4 className="popupText">Link to Meet app live site</h4>
                 </div>
               ) : null}
               <a
@@ -401,7 +435,9 @@ function SectionThree() {
             <div className="linkContainer">
               {chatGitHovered ? (
                 <div className="pokemonGitPopup">
-                  <h4>Link to Chat Away app Github repository</h4>
+                  <h4 className="popupText">
+                    Link to Chat Away app Github repository
+                  </h4>
                 </div>
               ) : null}
 
@@ -430,7 +466,9 @@ function SectionThree() {
 
             <div className="angularImageContainer">
               <p className="technologies">
-                <span className="bold">Technologies Used: </span>
+                <span className="bold" ref={domRefWorkIn}>
+                  Technologies Used:{" "}
+                </span>
                 <br></br>
                 HTML, CSS, JavaScript, TypeScript, Angular
               </p>
@@ -444,12 +482,16 @@ function SectionThree() {
             <div className="linkContainer">
               {angularGitHovered ? (
                 <div className="pokemonGitPopup">
-                  <h4>Link to myBond Flix Angular app Github repository</h4>
+                  <h4 className="popupText">
+                    Link to myBond Flix Angular app Github repository
+                  </h4>
                 </div>
               ) : null}
               {angularSiteHovered ? (
                 <div className="pokemonSitePopup">
-                  <h4>Link to myBond Flix Angular app live site</h4>
+                  <h4 className="popupText">
+                    Link to myBond Flix Angular app live site
+                  </h4>
                 </div>
               ) : null}
               <a
