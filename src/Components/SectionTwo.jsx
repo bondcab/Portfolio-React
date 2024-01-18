@@ -5,12 +5,14 @@ function SectionTwo({ setAbout, setHome, setContact, setWork }) {
   const domRefAbout = useRef();
 
   useEffect(() => {
+    const currentRef = domRefAbout.current;
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => setVisible(entry.isIntersecting));
     });
 
-    if (domRefAbout.current) {
-      observer.observe(domRefAbout.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     if (visible) {
@@ -21,11 +23,11 @@ function SectionTwo({ setAbout, setHome, setContact, setWork }) {
     }
 
     return () => {
-      if (domRefAbout.current) {
-        observer.unobserve(domRefAbout.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
-  }, []);
+  }, [domRefAbout, visible, setAbout, setContact, setHome, setWork]);
 
   return (
     <div className="aboutPageContainer">
