@@ -25,7 +25,7 @@ function SectionFour({ setAbout, setHome, setContact, setWork }) {
         observer.unobserve(domRefContact.current);
       }
     };
-  }, [visible]);
+  }, []);
 
   return (
     <div
