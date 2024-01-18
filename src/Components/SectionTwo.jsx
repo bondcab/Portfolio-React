@@ -1,6 +1,6 @@
 function SectionTwo() {
   return (
-    <div className="aboutPageContainer">
+    <div className="aboutPageContainer" id="#sectionTwo">
       <div className="aboutContainer">
         <div className="aboutSectionContainer">
           <h2 className="about">About</h2>
