@@ -1,8 +1,43 @@
-function SectionFour() {
+import { useState, useRef, useEffect } from "react";
+
+function SectionFour({ setAbout, setHome, setContact, setWork }) {
+  const [visible, setVisible] = useState(false);
+  const domRefContact = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => setVisible(entry.isIntersecting));
+    });
+
+    if (domRefContact.current) {
+      observer.observe(domRefContact.current);
+    }
+
+    if (visible) {
+      setHome(false);
+      setAbout(false);
+      setContact(true);
+      setWork(false);
+    }
+
+    return () => {
+      if (domRefContact.current) {
+        observer.unobserve(domRefContact.current);
+      }
+    };
+  }, [visible]);
+
   return (
-    <div className="contactPageContainer" id="#sectionFour">
+    <div
+      className={
+        visible ? "contactPageContainer" : "contactPageContainerReveal"
+      }
+      id="#sectionFour"
+    >
       <div className="contactInfoContainer">
-        <h2 className="contact">Contact</h2>
+        <h2 className="contact" ref={domRefContact}>
+          Contact
+        </h2>
 
         <p className="contactInfoText">
           <span className="bold">Phone:</span>{" "}
