@@ -1,9 +1,6 @@
 import "./App.css";
-import AboutPage from "./Components/AboutPage";
-import WorkPage from "./Components/WorkPage";
 import NavBar from "./Components/NavBar";
 import Socials from "./Components/Socials";
-import ContactPage from "./Components/ContactPage";
 import { useState } from "react";
 import SectionOne from "./Components/SectionOne";
 import SectionTwo from "./Components/SectionTwo";
@@ -28,10 +25,10 @@ function App() {
         contact={contact}
         work={work}
       />
-      {home ? <SectionOne /> : null}
-      {home ? <SectionTwo /> : null}
-      {home ? <SectionThree /> : null}
-      {home ? <SectionFour /> : null}
+      <SectionOne />
+      <SectionTwo />
+      <SectionThree />
+      <SectionFour />
       {/* {home ? (
         <HomePage
           setHome={setHome}
@@ -40,9 +37,6 @@ function App() {
           setWork={setWork}
         />
       ) : null} */}
-      {about ? <AboutPage /> : null}
-      {work ? <WorkPage /> : null}
-      {contact ? <ContactPage /> : null}
 
       <Socials />
     </div>
