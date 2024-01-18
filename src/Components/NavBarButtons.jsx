@@ -1,3 +1,5 @@
+import { Link, animateScroll as scroll } from "react-scroll";
+
 function NavBarButtons({
   setHome,
   setAbout,
@@ -39,32 +41,44 @@ function NavBarButtons({
   return (
     <div className="navButtonsContainer">
       <div className="navButtons">
-        <button
+        <Link
+          to="#sectionOne"
+          smooth={true}
+          duration={500}
           className={home ? "navbarHomeSelected" : "navbarButton"}
           onClick={handleHomeClick}
         >
           Home
-        </button>
-        <button
+        </Link>
+        <Link
+          to="#sectionTwo"
+          smooth={true}
+          duration={500}
           className={about ? "navbarAboutSelected" : "navbarButton"}
           onClick={handleAboutClick}
         >
           About
-        </button>
-
-        <button
+        </Link>
+        <Link
+          to="#sectionThree"
+          smooth={true}
+          duration={500}
+          offset={-100}
           className={work ? "navbarWorkSelected" : "navbarButton"}
           onClick={handleWorkClick}
         >
           Work
-        </button>
-
-        <button
+        </Link>
+        <Link
+          to="#sectionFour"
+          smooth={true}
+          duration={500}
+          offset={-100}
           className={contact ? "navbarContactSelected" : "navbarButton"}
           onClick={handleContactClick}
         >
           Contact
-        </button>
+        </Link>
       </div>
     </div>
   );
