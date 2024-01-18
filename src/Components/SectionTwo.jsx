@@ -25,7 +25,7 @@ function SectionTwo({ setAbout, setHome, setContact, setWork }) {
         observer.unobserve(domRefAbout.current);
       }
     };
-  }, [visible]);
+  }, []);
 
   return (
     <div className="aboutPageContainer">
