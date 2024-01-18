@@ -444,7 +444,6 @@ html body {
   display: flex;
   width: 90%;
   justify-content: center;
-  animation: opacityReveal 1s linear;
 }
 
 .aboutContainerReveal {
@@ -452,8 +451,17 @@ html body {
   display: flex;
   width: 90%;
   justify-content: center;
-  opacity: 0;
-  animation: opacityHide 1s linear;
+}
+
+@media (min-width: 600px) {
+  .aboutContainer {
+    animation: opacityReveal 1s linear;
+  }
+
+  .aboutContainerReveal {
+    opacity: 0;
+    animation: opacityHide 1s linear;
+  }
 }
 
 .aboutSkillsContainer {
@@ -893,15 +901,23 @@ a:active {
   background-color: #8a8a8a;
   padding-bottom: 100px;
   background-color: white;
-  animation: opacityReveal 1s linear;
 }
 
 .workSectionReveal {
   background-color: #8a8a8a;
   padding-bottom: 100px;
   background-color: white;
-  opacity: 0;
-  animation: opacityHide 1s linear;
+}
+
+@media (min-width: 600px) {
+  .workSection {
+    animation: opacityReveal 1s linear;
+  }
+
+  .workSectionReveal {
+    opacity: 0;
+    animation: opacityHide 1s linear;
+  }
 }
 
 .pokedexImageContainer {
@@ -1054,7 +1070,6 @@ a:active {
   flex-direction: column;
   padding-top: 200px;
   margin-bottom: 200px;
-  animation: opacityReveal 1s linear;
 }
 
 .contactPageContainerReveal {
@@ -1065,8 +1080,17 @@ a:active {
   flex-direction: column;
   padding-top: 200px;
   margin-bottom: 200px;
-  opacity: 0;
-  animation: opacityHide 1s linear;
+}
+
+@media (min-width: 600px) {
+  .contactPageContainer {
+    animation: opacityReveal 1s linear;
+  }
+
+  .contactPageContainerReveal {
+    opacity: 0;
+    animation: opacityHide 1s linear;
+  }
 }
 
 .contact {
@@ -1127,14 +1151,11 @@ a:active {
 .landingPageContainer {
   display: flex;
   background-color: #42c4e9;
-  /* animation: opacityReveal 1s linear; */
 }
 
 .landingPageContainerReveal {
   display: flex;
   background-color: #42c4e9;
-  /* opacity: 0;
-  animation: opacityHide 1s linear; */
 }
 
 @media (min-width: 600px) {
