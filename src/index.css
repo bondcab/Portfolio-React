@@ -33,6 +33,26 @@ html body {
   box-sizing: border-box;
 }
 
+@keyframes opacityReveal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityHide {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 /* Navbar Styling */
 .navBar {
   height: 80px;
@@ -105,10 +125,40 @@ html body {
   justify-content: center;
   align-items: center;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .navbarButton:hover {
   border: solid rgb(58, 58, 58);
+  cursor: pointer;
+}
+
+.navbarButtonCopy {
+  box-sizing: border-box;
+  background-color: red;
+  color: black;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 70px;
+  height: 30px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  width: 85px;
+  height: 30px;
+  border: solid lightgray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 6;
+}
+
+.navbarButtonCopy:hover {
+  border: solid rgb(58, 58, 58);
+  cursor: pointer;
 }
 
 .navbarWorkSelected {
@@ -128,6 +178,8 @@ html body {
   justify-content: center;
   align-items: center;
   font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .navbarContactSelected {
@@ -146,6 +198,8 @@ html body {
   justify-content: center;
   align-items: center;
   font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .navbarAboutSelected {
@@ -165,6 +219,8 @@ html body {
   justify-content: center;
   align-items: center;
   font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .navbarHomeSelected {
@@ -184,6 +240,52 @@ html body {
   justify-content: center;
   align-items: center;
   font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#navbarButtonCopy {
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 70px;
+  height: 30px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  width: 85px;
+  height: 30px;
+  border: solid lightgray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 3;
+}
+
+#navbarButtonCopy:hover {
+  box-sizing: border-box;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 85px;
+  height: 30px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .logo {
@@ -342,6 +444,16 @@ html body {
   display: flex;
   width: 90%;
   justify-content: center;
+  animation: opacityReveal 1s linear;
+}
+
+.aboutContainerReveal {
+  /* border: solid red; */
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  opacity: 0;
+  animation: opacityHide 1s linear;
 }
 
 .aboutSkillsContainer {
@@ -403,7 +515,7 @@ html body {
 }
 
 .aboutText {
-  font-weight: 600;
+  font-weight: 550;
   font-size: 20px;
 }
 
@@ -746,6 +858,11 @@ a:active {
   }
 }
 
+.popupText {
+  text-align: center;
+  padding: 10px;
+}
+
 .workHeadingContainer {
   display: flex;
   justify-content: center;
@@ -771,6 +888,15 @@ a:active {
   background-color: #8a8a8a;
   padding-bottom: 100px;
   background-color: white;
+  animation: opacityReveal 1s linear;
+}
+
+.workSectionReveal {
+  background-color: #8a8a8a;
+  padding-bottom: 100px;
+  background-color: white;
+  opacity: 0;
+  animation: opacityHide 1s linear;
 }
 
 .pokedexImageContainer {
@@ -921,6 +1047,21 @@ a:active {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 200px;
+  margin-bottom: 200px;
+  animation: opacityReveal 1s linear;
+}
+
+.contactPageContainerReveal {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 200px;
+  margin-bottom: 200px;
+  opacity: 0;
+  animation: opacityHide 1s linear;
 }
 
 .contact {
@@ -979,13 +1120,16 @@ a:active {
 /* Section One */
 /* Landing Page */
 .landingPageContainer {
-  /* border: solid blue; */
-  /* height: 100vh; */
   display: flex;
-  /* flex-direction: column;
-  justify-content: flex-end; */
   background-color: #42c4e9;
-  /* border-bottom: solid red; */
+  animation: opacityReveal 1s linear;
+}
+
+.landingPageContainerReveal {
+  display: flex;
+  background-color: #42c4e9;
+  opacity: 0;
+  animation: opacityHide 1s linear;
 }
 
 .sectionOneTextContainer {
