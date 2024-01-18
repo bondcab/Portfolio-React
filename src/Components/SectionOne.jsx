@@ -1,8 +1,44 @@
-function SectionOne() {
+import { useState, useRef, useEffect } from "react";
+
+function SectionOne({ setAbout, setHome, setContact, setWork }) {
+  const [visible, setVisible] = useState(true);
+  const domRefHome = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => setVisible(entry.isIntersecting));
+    });
+
+    if (domRefHome.current) {
+      observer.observe(domRefHome.current);
+    }
+    if (visible) {
+      if (visible) {
+        setHome(true);
+        setAbout(false);
+        setContact(false);
+        setWork(false);
+      }
+    }
+
+    return () => {
+      if (domRefHome.current) {
+        observer.unobserve(domRefHome.current);
+      }
+    };
+  }, [visible]);
+
   return (
-    <div className="landingPageContainer" id="#sectionOne">
+    <div
+      className={
+        visible ? "landingPageContainer" : "landingPageContainerReveal"
+      }
+      id="#sectionOne"
+    >
       <div className="sectionOneTextContainer">
-        <h1 className="sectionOneHeading">Hello World </h1>
+        <h1 className="sectionOneHeading" ref={domRefHome}>
+          Hello World{" "}
+        </h1>
         <h2 className="sectionOneSlogan">
           My name is Chris Bond. I am a web developer from the UK
         </h2>
