@@ -50,7 +50,6 @@ function SectionTwo({ setAbout, setHome, setContact, setWork }) {
         <div className="aboutSkillsContainer">
           <h2 className="about">Skills</h2>
           <div className="skillsContainer">
-            {/* <h2 className="skillsHeading">Skills</h2> */}
             <div className="skillTechnologies">
               <div className="frontEndSkills">
                 <h2 className="frontEnd" ref={domRefAbout}>
