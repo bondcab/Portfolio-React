@@ -693,6 +693,13 @@ html body {
   width: 126px;
   height: 42px;
 }
+
+@media (max-width: 600px) {
+  .downloadButton {
+    transform: translate(-60px);
+  }
+}
+
 /* Work Page Styling */
 
 .workPageContainer {
