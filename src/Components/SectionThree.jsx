@@ -140,6 +140,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
 
   return (
     <div className="workPageContainer">
+      <div className="blueBackground"></div>
       <section className={visible ? "workSection" : "workSectionReveal"}>
         <div className="workHeadingContainer">
           <h1 className="work-heading" id="#sectionThree">
