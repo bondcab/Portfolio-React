@@ -13,6 +13,12 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
   const [angularSiteHovered, setAngularSiteHovered] = useState(false);
   const [apiDocHovered, setApiDocHovered] = useState(false);
   const [bondCaseStudyHovered, setBondCasyStudyHovered] = useState(false);
+  const [pokemonHover, setPokemonHover] = useState(false);
+  const [apiHover, setAPIHover] = useState(false);
+  const [reactHover, setReactHover] = useState(false);
+  const [meetHover, setMeetHover] = useState(false);
+  const [chatHover, setChatHover] = useState(false);
+  const [angularHover, setAngularHover] = useState(false);
 
   const [visible, setVisible] = useState(false);
   const domRefWork = useRef();
@@ -138,6 +144,54 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
     setBondCasyStudyHovered(false);
   }
 
+  function handleOverPokemon() {
+    setPokemonHover(true);
+  }
+
+  function handleOffPokemon() {
+    setPokemonHover(false);
+  }
+
+  function handleOverAPI() {
+    setAPIHover(true);
+  }
+
+  function handleOffAPI() {
+    setAPIHover(false);
+  }
+
+  function handleOverReact() {
+    setReactHover(true);
+  }
+
+  function handleOffReact() {
+    setReactHover(false);
+  }
+
+  function handleOverMeet() {
+    setMeetHover(true);
+  }
+
+  function handleOffMeet() {
+    setMeetHover(false);
+  }
+
+  function handleOverChat() {
+    setChatHover(true);
+  }
+
+  function handleOffChat() {
+    setChatHover(false);
+  }
+
+  function handleOverAngular() {
+    setAngularHover(true);
+  }
+
+  function handleOffAngular() {
+    setAngularHover(false);
+  }
+
   return (
     <div className="workPageContainer">
       <div className="blueBackground"></div>
@@ -149,7 +203,11 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
         </div>
 
         <div className="grid" ref={domRefWork}>
-          <div className="grid__item">
+          <div
+            className="grid__item"
+            onMouseOver={handleOverPokemon}
+            onMouseOut={handleOffPokemon}
+          >
             <h2 className="project-titles">Pokedex App</h2>
             <p className="workText">
               A small web application built with HTML, CSS, and JavaScript that
@@ -163,7 +221,14 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 <br></br>
                 HTML, CSS, JavaScript
               </p>
-              <img src="pokedex.png" alt="pokedex" className="pokedexImage" />
+              <div
+                className={
+                  pokemonHover ? "imageContainerNoBlur" : "imageContainer"
+                }
+              >
+                <div className={pokemonHover ? null : "imageCover"}></div>
+                <img src="pokedex.png" alt="pokedex" className="pokedexImage" />
+              </div>
             </div>
             <div className="linkContainer">
               {pokemonGitHovered ? (
@@ -207,7 +272,11 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div className="grid__item" href="">
+          <div
+            className="grid__item"
+            onMouseOver={handleOverAPI}
+            onMouseOut={handleOffAPI}
+          >
             <h2 className="project-titles">Rest API</h2>
             <p className="workText">
               The server-side component of a James Bond movies web application.
@@ -223,8 +292,12 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 <br></br>
                 MongoDB, Express.JS, Node.JS, JavaScript
               </p>
-
-              <img src="API.png" alt="api" className="apiImage" />
+              <div
+                className={apiHover ? "imageContainerNoBlur" : "imageContainer"}
+              >
+                <div className={apiHover ? null : "imageCover"}></div>
+                <img src="API.png" alt="api" className="apiImage" />
+              </div>
             </div>
             <div className="linkContainer">
               {apiGitHovered ? (
@@ -267,8 +340,8 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
           </div>
           <div
             className="grid__item"
-            href="https://mybond-flix.netlify.app/"
-            target="_blank"
+            onMouseOver={handleOverReact}
+            onMouseOut={handleOffReact}
           >
             <h2 className="project-titles">myBond Flix App (React)</h2>
             <p className="workText">
@@ -284,11 +357,18 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 <br></br>
                 CSS, JavaScript, React
               </p>
-              <img
-                src="bondFlixReact.png"
-                alt="bondFlix-react"
-                className="reactImage"
-              />
+              <div
+                className={
+                  reactHover ? "imageContainerNoBlur" : "imageContainer"
+                }
+              >
+                <div className={reactHover ? null : "imageCover"}></div>
+                <img
+                  src="bondFlixReact.png"
+                  alt="bondFlix-react"
+                  className="reactImage"
+                />
+              </div>
             </div>
             <div className="linkContainer">
               {reactGitHovered ? (
@@ -353,8 +433,8 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
           </div>
           <div
             className="grid__item"
-            href="https://bondcab.github.io/Meet/"
-            target="_blank"
+            onMouseOver={handleOverMeet}
+            onMouseOut={handleOffMeet}
           >
             <h2 className="project-titles">Meet App</h2>
             <p className="workText">
@@ -370,8 +450,18 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 CSS, JavaScript, React, AWS Lambda, Google Calendar API, OAuth2,
                 Data Visualisation (Recharts)
               </p>
-
-              <img src="meet.png" alt="bondFlix-react" className="reactImage" />
+              <div
+                className={
+                  meetHover ? "imageContainerNoBlur" : "imageContainer"
+                }
+              >
+                <div className={meetHover ? null : "imageCover"}></div>
+                <img
+                  src="meet.png"
+                  alt="bondFlix-react"
+                  className="reactImage"
+                />
+              </div>
             </div>
             <div className="linkContainer">
               {meetGitHovered ? (
@@ -414,7 +504,11 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div className="grid__item">
+          <div
+            className="grid__item"
+            onMouseOver={handleOverChat}
+            onMouseOut={handleOffChat}
+          >
             <h2 className="project-titles">Chat Away</h2>
             <p className="workText">
               A chat app for mobile devices built using React Native. The app
@@ -429,11 +523,18 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 CSS, JavaScript, React Native, Expo, Google Firestore Database,
                 Firebase Authentication, Gifted Chat Library
               </p>
-              <img
-                src="chat_background.png"
-                alt="meet-01"
-                className="chatImage01"
-              />
+              <div
+                className={
+                  chatHover ? "imageContainerNoBlur" : "imageContainer"
+                }
+              >
+                <div className={chatHover ? null : "imageCover"}></div>
+                <img
+                  src="chat_background.png"
+                  alt="meet-01"
+                  className="chatImage01"
+                />
+              </div>
             </div>
             <div className="linkContainer">
               {chatGitHovered ? (
@@ -459,7 +560,11 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div className="grid__item">
+          <div
+            className="grid__item"
+            onMouseOver={handleOverAngular}
+            onMouseOut={handleOffAngular}
+          >
             <h2 className="project-titles">myBond Flix App (Angular)</h2>
             <p className="workText">
               In this project I undertook the redesign of myBond Flixs front-end
@@ -475,12 +580,18 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 <br></br>
                 HTML, CSS, JavaScript, TypeScript, Angular
               </p>
-
-              <img
-                src="bondFlixAngular.png"
-                alt="bondFlix-angular"
-                className="angularImage"
-              />
+              <div
+                className={
+                  angularHover ? "imageContainerNoBlur" : "imageContainer"
+                }
+              >
+                <div className={angularHover ? null : "imageCover"}></div>
+                <img
+                  src="bondFlixAngular.png"
+                  alt="bondFlix-angular"
+                  className="angularImage"
+                />
+              </div>
             </div>
             <div className="linkContainer">
               {angularGitHovered ? (
