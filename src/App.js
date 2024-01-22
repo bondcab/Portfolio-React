@@ -11,6 +11,10 @@ function App() {
   const [about, setAbout] = useState(false);
   const [contact, setContact] = useState(false);
   const [work, setWork] = useState(false);
+  const [workClicked, setWorkClicked] = useState(false);
+  const [homeClicked, setHomeClicked] = useState(false);
+  const [aboutClicked, setAboutClicked] = useState(false);
+  const [contactClicked, setContactClicked] = useState(false);
 
   return (
     <div className="App">
@@ -23,12 +27,22 @@ function App() {
         about={about}
         contact={contact}
         work={work}
+        workClicked={workClicked}
+        setWorkClicked={setWorkClicked}
+        aboutClicked={aboutClicked}
+        setAboutClicked={setAboutClicked}
+        homeClicked={homeClicked}
+        setHomeClicked={setHomeClicked}
+        contactClicked={contactClicked}
+        setContactClicked={setContactClicked}
       />
       <SectionOne
         setHome={setHome}
         setAbout={setAbout}
         setContact={setContact}
         setWork={setWork}
+        setWorkClicked={setWorkClicked}
+        work={work}
       />
       <SectionTwo
         setHome={setHome}
