@@ -54,7 +54,11 @@ function SectionFour({ setAbout, setHome, setContact, setWork }) {
           <p className="contactInfoText">
             <span className="bold">LinkedIn:</span>{" "}
             <span className="hidden">...</span>
-            <a href="https://www.linkedin.com/in/cabond/">
+            <a
+              href="https://www.linkedin.com/in/cabond/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src="linkedin.svg"
                 alt="linkedin-logo"
@@ -65,7 +69,11 @@ function SectionFour({ setAbout, setHome, setContact, setWork }) {
           <p className="contactInfoText">
             <span className="bold">GitHub:</span>{" "}
             <span className="hidden">...</span>
-            <a href="https://github.com/bondcab">
+            <a
+              href="https://github.com/bondcab"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src="github.svg"
                 alt="github-logo"
