@@ -9,6 +9,14 @@ function NavBar({
   about,
   contact,
   work,
+  workClicked,
+  setWorkClicked,
+  homeClicked,
+  setHomeClicked,
+  contactClicked,
+  setContactClicked,
+  aboutClicked,
+  setAboutClicked,
 }) {
   return (
     <div className="navBar">
@@ -22,6 +30,14 @@ function NavBar({
         about={about}
         contact={contact}
         work={work}
+        workClicked={workClicked}
+        setWorkClicked={setWorkClicked}
+        aboutClicked={aboutClicked}
+        setAboutClicked={setAboutClicked}
+        homeClicked={homeClicked}
+        setHomeClicked={setHomeClicked}
+        contactClicked={contactClicked}
+        setContactClicked={setContactClicked}
       />
     </div>
   );
