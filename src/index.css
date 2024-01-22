@@ -293,6 +293,28 @@ html body {
   justify-content: center;
 }
 
+.projectsButton {
+  box-sizing: border-box;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  height: 35px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
+  transform: translateY(15px);
+}
+
 .introContainer {
   width: 600px;
   height: 100%;
@@ -690,8 +712,8 @@ html body {
 }
 
 .downloadButton:hover {
-  width: 126px;
-  height: 42px;
+  width: 180px;
+  height: 45px;
 }
 
 @media (max-width: 600px) {
