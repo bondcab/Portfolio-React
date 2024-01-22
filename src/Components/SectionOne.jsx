@@ -1,8 +1,34 @@
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-scroll";
 
-function SectionOne({ setAbout, setHome, setContact, setWork }) {
+function SectionOne({
+  setAbout,
+  setHome,
+  setContact,
+  setWork,
+  setWorkClicked,
+  workClicked,
+  homeClicked,
+  contactClicked,
+  aboutClicked,
+  work,
+}) {
   const [visible, setVisible] = useState(true);
   const domRefHome = useRef();
+
+  function handleProjectClick() {
+    setHome(false);
+    setAbout(false);
+    setContact(false);
+    setWork(true);
+    setWorkClicked(true);
+
+    function clickReset() {
+      setWorkClicked(false);
+    }
+
+    setTimeout(clickReset, 500);
+  }
 
   useEffect(() => {
     const currentRef = domRefHome.current;
@@ -45,9 +71,21 @@ function SectionOne({ setAbout, setHome, setContact, setWork }) {
         </h2>
         <p className="sectionOneText">Check out some of my code below</p>
 
-        <button className="sectionOneButton" onClick={""} type="button">
+        <Link
+          to="#sectionThree"
+          smooth={true}
+          duration={500}
+          offset={-100}
+          id={
+            homeClicked || workClicked || aboutClicked || contactClicked
+              ? "navbarButtonCopy"
+              : null
+          }
+          className="projectsButton"
+          onClick={handleProjectClick}
+        >
           Projects
-        </button>
+        </Link>
       </div>
       <div className="profilePicContainer">
         <img
