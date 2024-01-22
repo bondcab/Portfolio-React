@@ -10,12 +10,15 @@ function NavBarButtons({
   about,
   contact,
   work,
+  workClicked,
+  setWorkClicked,
+  homeClicked,
+  setHomeClicked,
+  contactClicked,
+  setContactClicked,
+  aboutClicked,
+  setAboutClicked,
 }) {
-  const [homeClicked, setHomeClicked] = useState(false);
-  const [aboutClicked, setAboutClicked] = useState(false);
-  const [workClicked, setWorkClicked] = useState(false);
-  const [contactClicked, setContactClicked] = useState(false);
-
   function handleHomeClick() {
     setHome(true);
     setAbout(false);
