@@ -227,7 +227,17 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 }
               >
                 <div className={pokemonHover ? null : "imageCover"}></div>
-                <img src="pokedex.png" alt="pokedex" className="pokedexImage" />
+                <a
+                  href="https://bondcab.github.io/Pokemon_App/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="pokedex.png"
+                    alt="pokedex"
+                    className="pokedexImage"
+                  />
+                </a>
               </div>
             </div>
             <div className="linkContainer">
@@ -245,7 +255,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               ) : null}
 
               <a
-                href="https://github.com/bondcab/simple-js-app"
+                href="https://github.com/bondcab/Pokemon_App"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -258,7 +268,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 />
               </a>
               <a
-                href="https://bondcab.github.io/simple-js-app/"
+                href="https://bondcab.github.io/Pokemon_App/"
                 target="_blank"
                 rel="noreferrer"
               >
