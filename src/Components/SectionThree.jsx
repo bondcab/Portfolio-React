@@ -608,11 +608,17 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 }
               >
                 <div className={angularHover ? null : "imageCover"}></div>
-                <img
-                  src="bondFlixAngular.png"
-                  alt="bondFlix-angular"
-                  className="angularImage"
-                />
+                <a
+                  href="https://bondcab.github.io/myBondFlix-Angular-client/welcome"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="bondFlixAngular.png"
+                    alt="bondFlix-angular"
+                    className="angularImage"
+                  />
+                </a>
               </div>
             </div>
             <div className="linkContainer">
