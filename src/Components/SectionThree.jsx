@@ -478,11 +478,17 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 }
               >
                 <div className={meetHover ? null : "imageCover"}></div>
-                <img
-                  src="meet.png"
-                  alt="bondFlix-react"
-                  className="reactImage"
-                />
+                <a
+                  href="https://bondcab.github.io/Meet/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="meet.png"
+                    alt="bondFlix-react"
+                    className="reactImage"
+                  />
+                </a>
               </div>
             </div>
             <div className="linkContainer">
