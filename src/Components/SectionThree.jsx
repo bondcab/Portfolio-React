@@ -306,7 +306,13 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 className={apiHover ? "imageContainerNoBlur" : "imageContainer"}
               >
                 <div className={apiHover ? null : "imageCover"}></div>
-                <img src="API.png" alt="api" className="apiImage" />
+                <a
+                  href="https://bond-flix-9c1709905a90.herokuapp.com/documentation"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="API.png" alt="api" className="apiImage" />
+                </a>
               </div>
             </div>
             <div className="linkContainer">
@@ -373,11 +379,17 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 }
               >
                 <div className={reactHover ? null : "imageCover"}></div>
-                <img
-                  src="bondFlixReact.png"
-                  alt="bondFlix-react"
-                  className="reactImage"
-                />
+                <a
+                  href="https://mybond-flix.netlify.app/login"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="bondFlixReact.png"
+                    alt="bondFlix-react"
+                    className="reactImage"
+                  />
+                </a>
               </div>
             </div>
             <div className="linkContainer">
