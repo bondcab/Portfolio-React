@@ -287,31 +287,28 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
             onMouseOver={handleOverAPI}
             onMouseOut={handleOffAPI}
           >
-            <h2 className="project-titles">Rest API</h2>
+            <h2 className="project-titles">ToDo List App</h2>
             <p className="workText">
-              The server-side component of a James Bond movies web application.
-              The web application will provide users with access to information
-              about different Bond films, directors, and lead actors. Users will
-              be able to sign up, update their personal information, and create
-              a list of their favorite movies
+              A ToDo list app created with React JS. Tried to imitate a sticky
+              note style. Persistence enabled with local storage.
             </p>
 
             <div className="apiImageContainer">
               <p className="technologies">
                 <span className="bold">Technologies Used: </span>
                 <br></br>
-                MongoDB, Express.JS, Node.JS, JavaScript
+                HTML, CSS, JavaScript, React JS
               </p>
               <div
                 className={apiHover ? "imageContainerNoBlur" : "imageContainer"}
               >
                 <div className={apiHover ? null : "imageCover"}></div>
                 <a
-                  href="https://bond-flix-9c1709905a90.herokuapp.com/documentation"
+                  href="https://cbond-todolist-application.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="API.png" alt="api" className="apiImage" />
+                  <img src="ToDo.png" alt="api" className="apiImage" />
                 </a>
               </div>
             </div>
@@ -323,11 +320,11 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               ) : null}
               {apiDocHovered ? (
                 <div className="pokemonGitPopup">
-                  <h4 className="popupText">Link to API documentation</h4>
+                  <h4 className="popupText">Link to live site</h4>
                 </div>
               ) : null}
               <a
-                href="https://github.com/bondcab/myBondFlix"
+                href="https://github.com/bondcab/ToDo-List-React"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -340,7 +337,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 />
               </a>
               <a
-                href="https://bond-flix-9c1709905a90.herokuapp.com/documentation"
+                href="https://cbond-todolist-application.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -666,6 +663,78 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                   src="web.png"
                   onMouseOver={handleMouseOver10}
                   onMouseOut={handleMouseOut10}
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            className="grid__item"
+            onMouseOver={handleOverAPI}
+            onMouseOut={handleOffAPI}
+          >
+            <h2 className="project-titles">Rest API</h2>
+            <p className="workText">
+              The server-side component of a James Bond movies web application.
+              The web application will provide users with access to information
+              about different Bond films, directors, and lead actors. Users will
+              be able to sign up, update their personal information, and create
+              a list of their favorite movies
+            </p>
+
+            <div className="apiImageContainer">
+              <p className="technologies">
+                <span className="bold">Technologies Used: </span>
+                <br></br>
+                MongoDB, Express.JS, Node.JS, JavaScript
+              </p>
+              <div
+                className={apiHover ? "imageContainerNoBlur" : "imageContainer"}
+              >
+                <div className={apiHover ? null : "imageCover"}></div>
+                <a
+                  href="https://bond-flix-9c1709905a90.herokuapp.com/documentation"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="API.png" alt="api" className="apiImage" />
+                </a>
+              </div>
+            </div>
+            <div className="linkContainer">
+              {apiGitHovered ? (
+                <div className="pokemonGitPopup">
+                  <h4 className="popupText">Link to API Github repository</h4>
+                </div>
+              ) : null}
+              {apiDocHovered ? (
+                <div className="pokemonGitPopup">
+                  <h4 className="popupText">Link to API documentation</h4>
+                </div>
+              ) : null}
+              <a
+                href="https://github.com/bondcab/myBondFlix"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="pokemonGithub"
+                  alt="github"
+                  src="github.svg"
+                  onMouseOver={handleMouseOver3}
+                  onMouseOut={handleMouseOut3}
+                />
+              </a>
+              <a
+                href="https://bond-flix-9c1709905a90.herokuapp.com/documentation"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="pokemonLive"
+                  alt="github"
+                  src="web.png"
+                  onMouseOver={handleMouseOver0}
+                  onMouseOut={handleMouseOut0}
                 />
               </a>
             </div>
