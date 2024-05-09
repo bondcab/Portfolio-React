@@ -95,6 +95,10 @@ function SectionTwo({ setAbout, setHome, setContact, setWork }) {
                     className="reactIcon"
                   />
                 </div>
+                <div className="skill">
+                  <p className="skillsText">Redux</p>
+                  <img src="redux.png" alt="Redux logo" className="reactIcon" />
+                </div>
               </div>
               <div className="backEndSkills">
                 <h2>Back-End</h2>
