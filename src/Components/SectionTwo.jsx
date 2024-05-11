@@ -38,9 +38,9 @@ function SectionTwo({ setAbout, setHome, setContact, setWork }) {
           </h2>
           <div className="aboutTextContainer">
             <p className="aboutText">
-              Hello, I'm Chris—a detail-oriented and organized professional with
-              a background in 3D animation and IT support. Now exploring web
-              development, my autonomy, patience, and problem-solving skills
+              Hello, I'm Chris, a detail oriented and organised professional
+              with a background in 3D animation and IT support. Now exploring
+              web development, my autonomy, patience, and problem-solving skills
               equip me to create efficient and visually engaging web solutions.
               I'm eager to bring my strengths to your team, offering a reliable
               and independent perspective for your projects.
@@ -97,7 +97,7 @@ function SectionTwo({ setAbout, setHome, setContact, setWork }) {
                 </div>
                 <div className="skill">
                   <p className="skillsText">Redux</p>
-                  <img src="redux.png" alt="Redux logo" className="reactIcon" />
+                  <img src="redux.png" alt="Redux logo" className="reduxIcon" />
                 </div>
               </div>
               <div className="backEndSkills">
