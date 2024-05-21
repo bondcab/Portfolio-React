@@ -205,8 +205,8 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
         <div className="grid" ref={domRefWork}>
           <div
             className="grid__item"
-            onMouseOver={handleOverReact}
-            onMouseOut={handleOffReact}
+            // onMouseOver={handleOverReact}
+            // onMouseOut={handleOffReact}
           >
             <h2 className="project-titles">myBond Flix App (React)</h2>
             <p className="workText">
@@ -304,8 +304,8 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
           </div>
           <div
             className="grid__item"
-            onMouseOver={handleOverPokemon}
-            onMouseOut={handleOffPokemon}
+            // onMouseOver={handleOverPokemon}
+            // onMouseOut={handleOffPokemon}
           >
             <h2 className="project-titles">Pokedex App</h2>
             <p className="workText">
@@ -383,8 +383,8 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
           </div>
           <div
             className="grid__item"
-            onMouseOver={handleOverAPI}
-            onMouseOut={handleOffAPI}
+            // onMouseOver={handleOverAPI}
+            // onMouseOut={handleOffAPI}
           >
             <h2 className="project-titles">ToDo List App</h2>
             <p className="workText">
@@ -453,8 +453,8 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
 
           <div
             className="grid__item"
-            onMouseOver={handleOverMeet}
-            onMouseOut={handleOffMeet}
+            // onMouseOver={handleOverMeet}
+            // onMouseOut={handleOffMeet}
           >
             <h2 className="project-titles">Meet App</h2>
             <p className="workText">
@@ -532,8 +532,8 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
           </div>
           <div
             className="grid__item"
-            onMouseOver={handleOverChat}
-            onMouseOut={handleOffChat}
+            // onMouseOver={handleOverChat}
+            // onMouseOut={handleOffChat}
           >
             <h2 className="project-titles">Chat Away</h2>
             <p className="workText">
@@ -588,8 +588,8 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
           </div>
           <div
             className="grid__item"
-            onMouseOver={handleOverAngular}
-            onMouseOut={handleOffAngular}
+            // onMouseOver={handleOverAngular}
+            // onMouseOut={handleOffAngular}
           >
             <h2 className="project-titles">myBond Flix App (Angular)</h2>
             <p className="workText">
@@ -670,8 +670,8 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
           </div>
           <div
             className="grid__item"
-            onMouseOver={handleOverAPI}
-            onMouseOut={handleOffAPI}
+            // onMouseOver={handleOverAPI}
+            // onMouseOut={handleOffAPI}
           >
             <h2 className="project-titles">Rest API</h2>
             <p className="workText">
