@@ -13,12 +13,12 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
   const [angularSiteHovered, setAngularSiteHovered] = useState(false);
   const [apiDocHovered, setApiDocHovered] = useState(false);
   const [bondCaseStudyHovered, setBondCasyStudyHovered] = useState(false);
-  const [pokemonHover, setPokemonHover] = useState(false);
-  const [apiHover, setAPIHover] = useState(false);
-  const [reactHover, setReactHover] = useState(false);
-  const [meetHover, setMeetHover] = useState(false);
-  const [chatHover, setChatHover] = useState(false);
-  const [angularHover, setAngularHover] = useState(false);
+  const [pokemonHover, setPokemonHover] = useState(true);
+  const [apiHover, setAPIHover] = useState(true);
+  const [reactHover, setReactHover] = useState(true);
+  const [meetHover, setMeetHover] = useState(true);
+  const [chatHover, setChatHover] = useState(true);
+  const [angularHover, setAngularHover] = useState(true);
 
   const [visible, setVisible] = useState(false);
   const domRefWork = useRef();

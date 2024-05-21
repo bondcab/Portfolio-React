@@ -281,7 +281,7 @@ html body {
 .logo {
   margin-left: 120px;
   z-index: 5;
-  border: solid white 1px;
+  /* border: solid white 1px; */
 }
 
 @media (max-width: 800px) {
@@ -1122,9 +1122,10 @@ a:active {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 160px;
+  padding-top: 190px;
   margin-bottom: 98px;
   z-index: 1;
+  /* border: solid red 3px; */
 }
 
 .contactWhiteOne {
