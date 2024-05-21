@@ -205,6 +205,105 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
         <div className="grid" ref={domRefWork}>
           <div
             className="grid__item"
+            onMouseOver={handleOverReact}
+            onMouseOut={handleOffReact}
+          >
+            <h2 className="project-titles">myBond Flix App (React)</h2>
+            <p className="workText">
+              In this project, I crafted the frontend of the James Bond Movies
+              App with ReactJS. Collaborating seamlessly with the Rest API
+              project, I successfully delivered a comprehensive full-stack
+              application utilizing the MERN stack
+            </p>
+
+            <div className="reactImageContainer">
+              <p className="technologies">
+                <span className="bold">Technologies Used: </span>
+                <br></br>
+                CSS, JavaScript, React
+              </p>
+              <div
+                className={
+                  reactHover ? "imageContainerNoBlur" : "imageContainer"
+                }
+              >
+                <div className={reactHover ? null : "imageCover"}></div>
+                <a
+                  href="https://mybond-flix.netlify.app/login"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="bondApp.png"
+                    alt="bondFlix-react"
+                    className="reactImage"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="linkContainer">
+              {reactGitHovered ? (
+                <div className="pokemonGitPopup">
+                  <h4 className="popupText">
+                    Link to myBond Flix React app Github repository
+                  </h4>
+                </div>
+              ) : null}
+              {reactSiteHovered ? (
+                <div className="pokemonGitPopup">
+                  <h4 className="popupText">
+                    Link to myBond Flix React app live site
+                  </h4>
+                </div>
+              ) : null}
+              {bondCaseStudyHovered ? (
+                <div className="pokemonGitPopup">
+                  <h4 className="popupText">Link to myBond Flix case study</h4>
+                </div>
+              ) : null}
+              <a
+                href="https://github.com/bondcab/myBondFlix-client"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="pokemonGithub"
+                  alt="github"
+                  src="github.svg"
+                  onMouseOver={handleMouseOver4}
+                  onMouseOut={handleMouseOut4}
+                />
+              </a>
+              <a
+                href="https://mybond-flix.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="pokemonLive"
+                  alt="pokedex-site-link"
+                  src="web.png"
+                  onMouseOver={handleMouseOver5}
+                  onMouseOut={handleMouseOut5}
+                />
+              </a>
+              <a
+                href="https://mybondflix-casestudy.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="caseStudy"
+                  alt="myBondFlix case study"
+                  src="document.png"
+                  onMouseOver={handleMouseOver11}
+                  onMouseOut={handleMouseOut11}
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            className="grid__item"
             onMouseOver={handleOverPokemon}
             onMouseOut={handleOffPokemon}
           >
@@ -351,105 +450,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div
-            className="grid__item"
-            onMouseOver={handleOverReact}
-            onMouseOut={handleOffReact}
-          >
-            <h2 className="project-titles">myBond Flix App (React)</h2>
-            <p className="workText">
-              In this project, I crafted the frontend of the James Bond Movies
-              App with ReactJS. Collaborating seamlessly with the Rest API
-              project, I successfully delivered a comprehensive full-stack
-              application utilizing the MERN stack
-            </p>
 
-            <div className="reactImageContainer">
-              <p className="technologies">
-                <span className="bold">Technologies Used: </span>
-                <br></br>
-                CSS, JavaScript, React
-              </p>
-              <div
-                className={
-                  reactHover ? "imageContainerNoBlur" : "imageContainer"
-                }
-              >
-                <div className={reactHover ? null : "imageCover"}></div>
-                <a
-                  href="https://mybond-flix.netlify.app/login"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="bondFlixReact.png"
-                    alt="bondFlix-react"
-                    className="reactImage"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="linkContainer">
-              {reactGitHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">
-                    Link to myBond Flix React app Github repository
-                  </h4>
-                </div>
-              ) : null}
-              {reactSiteHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">
-                    Link to myBond Flix React app live site
-                  </h4>
-                </div>
-              ) : null}
-              {bondCaseStudyHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">Link to myBond Flix case study</h4>
-                </div>
-              ) : null}
-              <a
-                href="https://github.com/bondcab/myBondFlix-client"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  className="pokemonGithub"
-                  alt="github"
-                  src="github.svg"
-                  onMouseOver={handleMouseOver4}
-                  onMouseOut={handleMouseOut4}
-                />
-              </a>
-              <a
-                href="https://mybond-flix.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  className="pokemonLive"
-                  alt="pokedex-site-link"
-                  src="web.png"
-                  onMouseOver={handleMouseOver5}
-                  onMouseOut={handleMouseOut5}
-                />
-              </a>
-              <a
-                href="https://mybondflix-casestudy.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  className="caseStudy"
-                  alt="myBondFlix case study"
-                  src="document.png"
-                  onMouseOver={handleMouseOver11}
-                  onMouseOut={handleMouseOut11}
-                />
-              </a>
-            </div>
-          </div>
           <div
             className="grid__item"
             onMouseOver={handleOverMeet}

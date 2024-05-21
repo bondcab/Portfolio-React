@@ -20,6 +20,7 @@
   --logo-width-size: 200px;
   --button-color: #333;
   --webpage-blue: #42c4e9;
+  /* --webpage-blue: #00000012; */
   --webpage-grey: #808080;
 }
 
@@ -279,6 +280,8 @@ html body {
 
 .logo {
   margin-left: 120px;
+  z-index: 5;
+  border: solid white 1px;
 }
 
 @media (max-width: 800px) {
@@ -634,12 +637,12 @@ html body {
 .htmlIcon {
   width: 45px;
   height: 45px;
-  margin-left: 62px;
+  margin-left: 66px;
 }
 
 .mongoIcon {
   width: 59px;
-  margin-left: 14px;
+  margin-left: 19px;
 }
 
 .postmanIcon {
@@ -654,24 +657,24 @@ html body {
 
 .nodeIcon {
   width: 50px;
-  margin-left: 38px;
+  margin-left: 40px;
 }
 
 .mongooseIcon {
   width: 55px;
-  margin-left: 18px;
+  margin-left: 17px;
 }
 
 .cssIcon {
   width: 45px;
   height: 45px;
-  margin-left: 78px;
+  margin-left: 84px;
 }
 
 .jsIcon {
   width: 45px;
   height: 45px;
-  margin-left: 20px;
+  margin-left: 22px;
 }
 
 .tsIcon {
@@ -682,17 +685,17 @@ html body {
 
 .bootstrapIcon {
   width: 54px;
-  margin-left: 22px;
+  margin-left: 23px;
 }
 
 .reactIcon {
   width: 54px;
-  margin-left: 59px;
+  margin-left: 62px;
 }
 
 .reduxIcon {
   width: 54px;
-  margin-left: 55px;
+  margin-left: 56px;
 }
 
 .awsIcon {
