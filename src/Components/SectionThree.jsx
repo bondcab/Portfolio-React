@@ -13,12 +13,18 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
   const [angularSiteHovered, setAngularSiteHovered] = useState(false);
   const [apiDocHovered, setApiDocHovered] = useState(false);
   const [bondCaseStudyHovered, setBondCasyStudyHovered] = useState(false);
-  const [pokemonHover, setPokemonHover] = useState(true);
-  const [apiHover, setAPIHover] = useState(true);
-  const [reactHover, setReactHover] = useState(true);
-  const [meetHover, setMeetHover] = useState(true);
-  const [chatHover, setChatHover] = useState(true);
-  const [angularHover, setAngularHover] = useState(true);
+  // const [pokemonHover, setPokemonHover] = useState(true);
+  // const [apiHover, setAPIHover] = useState(true);
+  // const [reactHover, setReactHover] = useState(true);
+  // const [meetHover, setMeetHover] = useState(true);
+  // const [chatHover, setChatHover] = useState(true);
+  // const [angularHover, setAngularHover] = useState(true);
+  const pokemonHover = true;
+  const apiHover = true;
+  const reactHover = true;
+  const meetHover = true;
+  const chatHover = true;
+  const angularHover = true;
 
   const [visible, setVisible] = useState(false);
   const domRefWork = useRef();
@@ -144,53 +150,53 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
     setBondCasyStudyHovered(false);
   }
 
-  function handleOverPokemon() {
-    setPokemonHover(true);
-  }
+  // function handleOverPokemon() {
+  //   setPokemonHover(true);
+  // }
 
-  function handleOffPokemon() {
-    setPokemonHover(false);
-  }
+  // function handleOffPokemon() {
+  //   setPokemonHover(false);
+  // }
 
-  function handleOverAPI() {
-    setAPIHover(true);
-  }
+  // function handleOverAPI() {
+  //   setAPIHover(true);
+  // }
 
-  function handleOffAPI() {
-    setAPIHover(false);
-  }
+  // function handleOffAPI() {
+  //   setAPIHover(false);
+  // }
 
-  function handleOverReact() {
-    setReactHover(true);
-  }
+  // function handleOverReact() {
+  //   setReactHover(true);
+  // }
 
-  function handleOffReact() {
-    setReactHover(false);
-  }
+  // function handleOffReact() {
+  //   setReactHover(false);
+  // }
 
-  function handleOverMeet() {
-    setMeetHover(true);
-  }
+  // function handleOverMeet() {
+  //   setMeetHover(true);
+  // }
 
-  function handleOffMeet() {
-    setMeetHover(false);
-  }
+  // function handleOffMeet() {
+  //   setMeetHover(false);
+  // }
 
-  function handleOverChat() {
-    setChatHover(true);
-  }
+  // function handleOverChat() {
+  //   setChatHover(true);
+  // }
 
-  function handleOffChat() {
-    setChatHover(false);
-  }
+  // function handleOffChat() {
+  //   setChatHover(false);
+  // }
 
-  function handleOverAngular() {
-    setAngularHover(true);
-  }
+  // function handleOverAngular() {
+  //   setAngularHover(true);
+  // }
 
-  function handleOffAngular() {
-    setAngularHover(false);
-  }
+  // function handleOffAngular() {
+  //   setAngularHover(false);
+  // }
 
   return (
     <div className="workPageContainer">
