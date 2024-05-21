@@ -692,13 +692,13 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 className={apiHover ? "imageContainerNoBlur" : "imageContainer"}
               >
                 <div className={apiHover ? null : "imageCover"}></div>
-                <a
+                {/* <a
                   href="https://bond-flix-9c1709905a90.herokuapp.com/documentation"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img src="API.png" alt="api" className="apiImage" />
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="linkContainer">
