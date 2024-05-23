@@ -1,0 +1,20 @@
+.navBar {
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+.logo {
+  margin-left: 120px;
+  z-index: 5;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    display: none;
+  }
+}

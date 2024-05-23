@@ -1,0 +1,211 @@
+.navButtonsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 800px) {
+  .navButtonsContainer {
+    justify-content: center;
+  }
+  .navBar {
+    justify-content: center;
+  }
+}
+
+.navButtons {
+  box-sizing: border-box;
+  height: 100%;
+  margin-right: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 390px;
+}
+
+@media (max-width: 800px) {
+  .navButtons {
+    margin-right: 0px;
+  }
+}
+
+.navbarButton {
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  width: 85px;
+  height: 30px;
+  border: solid lightgray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbarButton:hover {
+  border: solid rgb(58, 58, 58);
+  cursor: pointer;
+}
+
+.navbarButtonCopy {
+  box-sizing: border-box;
+  background-color: red;
+  color: black;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 70px;
+  height: 30px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  width: 85px;
+  height: 30px;
+  border: solid lightgray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 6;
+}
+
+.navbarButtonCopy:hover {
+  border: solid rgb(58, 58, 58);
+  cursor: pointer;
+}
+
+.navbarWorkSelected {
+  box-sizing: border-box;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 85px;
+  height: 30px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.navbarContactSelected {
+  box-sizing: border-box;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 85px;
+  height: 30px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.navbarAboutSelected {
+  box-sizing: border-box;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 85px;
+  height: 30px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.navbarHomeSelected {
+  box-sizing: border-box;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 85px;
+  height: 30px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#navbarButtonCopy {
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 70px;
+  height: 30px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  width: 85px;
+  height: 30px;
+  border: solid lightgray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 3;
+}
+
+#navbarButtonCopy:hover {
+  box-sizing: border-box;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 85px;
+  height: 30px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
+}
