@@ -1,0 +1,29 @@
+:root {
+  --webpage-white: white;
+  --webpage-colour-01: rgb(235, 235, 235);
+  --webpage-colour-02: rgb(116, 116, 116);
+  --webpage-colour-03: rgb(58, 58, 58);
+}
+
+.navBar {
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  background-color: var(--webpage-white);
+  /* border-bottom: solid var(--webpage-colour-01) 3px; */
+  padding-bottom: 10px;
+}
+
+.logo {
+  margin-left: 120px;
+  z-index: 5;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    display: none;
+  }
+}

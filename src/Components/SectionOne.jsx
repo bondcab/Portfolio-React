@@ -70,7 +70,7 @@ function SectionOne({
           Hello World
         </h1>
         <h2 className={styles.sectionOneSlogan}>
-          My name is Chris Bond. I am a web developer from the UK
+          My name is Chris. I am a web developer from the UK
         </h2>
         <p className={styles.sectionOneText}>Check out some of my code below</p>
 

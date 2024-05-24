@@ -1,3 +1,10 @@
+:root {
+  --webpage-white: white;
+  --webpage-colour-01: rgb(235, 235, 235);
+  --webpage-colour-02: rgb(116, 116, 116);
+  --webpage-colour-03: rgb(58, 58, 58);
+}
+
 .navButtonsContainer {
   width: 100%;
   display: flex;
@@ -32,7 +39,7 @@
 
 .navbarButton {
   box-sizing: border-box;
-  background-color: white;
+  background-color: var(--webpage-white);
   color: black;
   font-size: 17px;
   border: none;
@@ -41,7 +48,7 @@
   font-family: "Montserrat", sans-serif;
   width: 85px;
   height: 30px;
-  border: solid lightgray;
+  border: solid var(--webpage-colour-01);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -51,7 +58,7 @@
 }
 
 .navbarButton:hover {
-  border: solid rgb(58, 58, 58);
+  border: solid var(--webpage-colour-02);
   cursor: pointer;
 }
 
@@ -68,7 +75,7 @@
   font-family: "Montserrat", sans-serif;
   width: 85px;
   height: 30px;
-  border: solid lightgray;
+  border: solid var(--webpage-colour-01);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -79,14 +86,14 @@
 }
 
 .navbarButtonCopy:hover {
-  border: solid rgb(58, 58, 58);
+  border: solid var(--webpage-colour-03);
   cursor: pointer;
 }
 
 .navbarWorkSelected {
   box-sizing: border-box;
-  background-color: rgb(58, 58, 58);
-  color: white;
+  background-color: var(--webpage-colour-03);
+  color: var(--webpage-white);
   font-size: 17px;
   border: none;
   border-radius: 10px;
@@ -106,8 +113,8 @@
 
 .navbarContactSelected {
   box-sizing: border-box;
-  background-color: rgb(58, 58, 58);
-  color: white;
+  background-color: var(--webpage-colour-03);
+  color: var(--webpage-white);
   font-size: 17px;
   border: none;
   border-radius: 10px;
@@ -126,8 +133,8 @@
 
 .navbarAboutSelected {
   box-sizing: border-box;
-  background-color: rgb(58, 58, 58);
-  color: white;
+  background-color: var(--webpage-colour-03);
+  color: var(--webpage-white);
   font-size: 17px;
   border: none;
   border-radius: 10px;
@@ -147,8 +154,8 @@
 
 .navbarHomeSelected {
   box-sizing: border-box;
-  background-color: rgb(58, 58, 58);
-  color: white;
+  background-color: var(--webpage-colour-03);
+  color: var(--webpage-white);
   font-size: 17px;
   border: none;
   border-radius: 10px;
@@ -168,7 +175,7 @@
 
 #navbarButtonCopy {
   box-sizing: border-box;
-  background-color: white;
+  background-color: var(--webpage-white);
   color: black;
   font-size: 17px;
   border: none;
@@ -191,8 +198,8 @@
 
 #navbarButtonCopy:hover {
   box-sizing: border-box;
-  background-color: rgb(58, 58, 58);
-  color: white;
+  background-color: var(--webpage-colour-03);
+  color: var(--webpage-white);
   font-size: 17px;
   border: none;
   border-radius: 10px;

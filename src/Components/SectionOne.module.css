@@ -1,3 +1,10 @@
+:root {
+  --webpage-white: white;
+  --webpage-colour-01: rgb(235, 235, 235);
+  --webpage-colour-02: rgb(116, 116, 116);
+  --webpage-button-solid: rgb(58, 58, 58);
+}
+
 @keyframes opacityReveal {
   from {
     opacity: 0;
@@ -20,16 +27,18 @@
 
 .landingPageContainer {
   display: flex;
-  background-color: var(--webpage-blue);
-  background-color: white;
+  background-color: var(--webpage-white);
   padding-bottom: 30px;
+  border-bottom: solid var(--webpage-colour-01) 15px;
+  height: 100vh;
 }
 
 .landingPageContainerReveal {
   display: flex;
-  background-color: var(--webpage-blue);
-  background-color: white;
+  background-color: var(--webpage-white);
   padding-bottom: 30px;
+  border-bottom: solid var(--webpage-colour-01) 15px;
+  height: 100vh;
 }
 
 .sectionOneTextContainer {
@@ -64,8 +73,8 @@
 
 .projectsButton {
   box-sizing: border-box;
-  background-color: rgb(58, 58, 58);
-  color: white;
+  background-color: var(--webpage-button-solid);
+  color: var(--webpage-white);
   font-size: 17px;
   border: none;
   border-radius: 10px;
@@ -96,13 +105,12 @@
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  border: solid white 12px;
+  border: solid var(--webpage-white) 12px;
   margin-top: 40px;
 }
 
 .sectionOneWhite {
-  background-color: white;
-  background-color: rgb(223, 223, 223);
+  background-color: var(--webpage-colour-01);
   width: 1600px;
   height: 1300px;
   border-radius: 50%;
@@ -112,42 +120,13 @@
 }
 
 .sectionOneGrey {
-  background-color: var(--webpage-grey);
-  background-color: rgb(116, 116, 116);
+  background-color: var(--webpage-colour-02);
   width: 2400px;
   height: 1900px;
   border-radius: 50%;
   position: absolute;
   transform: translate(-800px, -1120px);
   z-index: 1;
-}
-
-#navbarButtonCopy {
-  box-sizing: border-box;
-  background-color: red;
-  color: black;
-  font-size: 17px;
-  border: none;
-  border-radius: 10px;
-  width: 70px;
-  height: 30px;
-  margin: 5px;
-  font-family: "Montserrat", sans-serif;
-  width: 85px;
-  height: 30px;
-  border: solid lightgray;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-  cursor: pointer;
-  z-index: 6;
-}
-
-#navbarButtonCopy:hover {
-  border: solid rgb(58, 58, 58);
-  cursor: pointer;
 }
 
 @media (min-width: 1650px) {

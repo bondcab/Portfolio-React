@@ -1,13 +1,4 @@
 :root {
-  --website-green: #357b70;
-  --work-projects-background: white;
-  --webpage-white: #fff;
-  --webpage-black: #000;
-  --about-city-grey-1: #ebebeb;
-  --about-city-grey-2: #999;
-  --about-city-grey-3: #333;
-  --secondary-color: #e0b354;
-  --dark-grey: #2b2b2b;
   --h-font-weight: 700;
   --h1-font-size: 30px;
   --h2-font-size: 24px;
@@ -18,10 +9,10 @@
   --body-font-family-size: 1.6;
   --profile-pic-width-height: 250px;
   --logo-width-size: 200px;
-  --button-color: #333;
-  --webpage-blue: #42c4e9;
-  /* --webpage-blue: #00000012; */
-  --webpage-grey: #808080;
+  --webpage-white: white;
+  --webpage-colour-01: rgb(235, 235, 235);
+  --webpage-colour-02: rgb(116, 116, 116);
+  --webpage-colour-03: rgb(58, 58, 58);
 }
 
 html body {
@@ -385,31 +376,6 @@ a:active {
   width: 100%;
   z-index: 5;
   height: 30px;
-}
-
-.workSection {
-  padding-bottom: 100px;
-  background-color: white;
-  z-index: 3;
-}
-
-.workSectionReveal {
-  padding-bottom: 100px;
-  background-color: white;
-  z-index: 3;
-}
-
-@media (min-width: 600px) {
-  .workSection {
-    animation: opacityReveal 1s linear;
-    z-index: 3;
-  }
-
-  .workSectionReveal {
-    opacity: 0;
-    animation: opacityHide 1s linear;
-    z-index: 3;
-  }
 }
 
 .pokedexImageContainer {
@@ -803,4 +769,26 @@ a:active {
 
 .about {
   color: black;
+}
+
+/* Carousel Dots */
+.carousel__dot {
+  background-color: var(--webpage-colour-03);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.carousel__dot--selected {
+  background-color: var(--webpage-colour-01);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: solid 2px var(--webpage-colour-02);
 }

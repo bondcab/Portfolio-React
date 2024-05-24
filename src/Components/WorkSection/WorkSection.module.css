@@ -1,0 +1,93 @@
+:root {
+  --webpage-white: white;
+  --webpage-colour-01: rgb(235, 235, 235);
+  --webpage-colour-02: rgb(116, 116, 116);
+  --webpage-colour-03: rgb(58, 58, 58);
+}
+
+@keyframes opacityReveal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityHide {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.workSectionContainer {
+  border: solid red 3px;
+  width: 100%;
+  margin-top: 50px;
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  background-color: var(--webpage-white);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.workSection {
+  padding-bottom: 100px;
+  background-color: white;
+  z-index: 3;
+  border: solid purple 3px;
+  position: relative;
+}
+
+.workSectionReveal {
+  padding-bottom: 100px;
+  background-color: white;
+  z-index: 3;
+}
+
+.workHeadingContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.workHeading {
+  text-align: center;
+  width: 200px;
+  border-radius: 15px;
+  opacity: 1;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.5em;
+  transform: translateY(30px);
+}
+
+@media (min-width: 600px) {
+  .workSection {
+    animation: opacityReveal 1s linear;
+    z-index: 3;
+  }
+
+  .workSectionReveal {
+    opacity: 0;
+    animation: opacityHide 1s linear;
+    z-index: 3;
+  }
+}
+
+.workSlideContainer {
+  /* border: solid blue 3px; */
+  display: flex;
+  /* flex: 1; */
+  /* height: 100%; */
+  /* height: 500px; */
+  justify-content: center;
+}
