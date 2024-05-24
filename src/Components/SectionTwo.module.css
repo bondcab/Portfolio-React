@@ -1,0 +1,318 @@
+@keyframes opacityReveal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityHide {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.aboutPageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--webpage-blue);
+  background-color: white;
+  /* border: solid red 3px; */
+}
+
+.aboutContainer {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  /* background-color: rgb(223, 223, 223); */
+  /* border: solid blue 3px; */
+}
+
+.aboutContainerReveal {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  /* background-color: rgb(223, 223, 223); */
+  /* border: solid blue 3px; */
+}
+
+.sectionContainer {
+  /* border: solid yellow 3px; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutSkillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  /* border: solid orange 3px; */
+}
+
+.aboutTextContainer {
+  width: 600px;
+  margin-bottom: 50px;
+  text-align: start;
+  background-color: white;
+  align-self: flex-start;
+  height: 606px;
+  border: 3px;
+  /* border-color: red; */
+  /* border-style: solid; */
+  background-color: rgba(211, 211, 211, 0);
+}
+
+.aboutTextSubContainer {
+  border: solid lightgray 3px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.aboutSectionContainer {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: solid pink 3px; */
+}
+
+.about {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.5em;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 200px;
+}
+
+.aboutText {
+  font-weight: 550;
+  font-size: 18px;
+}
+
+.skillsContainer {
+  margin-bottom: 50px;
+  /* border: solid green 3px; */
+  /* height: 600px; */
+  /* display: flex; */
+}
+
+.skillTechnologies {
+  display: flex;
+
+  /* width: 680px; */
+  justify-content: center;
+  /* padding-left: 50px; */
+  /* padding-right: 50px; */
+  /* margin-left: 50px; */
+}
+
+.frontEndSkills {
+  width: 300px;
+  height: 600px;
+  /* margin-right: 50px; */
+  background-color: white;
+  border-radius: 25px 0 0 25px;
+  padding: 20px;
+  padding-left: 63px;
+  border: 3px;
+  border-right: 3px;
+  border-color: lightgray;
+  border-style: solid;
+}
+
+.frontEnd {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.skill {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skillsText {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.htmlIcon {
+  width: 45px;
+  height: 45px;
+  margin-left: 66px;
+}
+
+.cssIcon {
+  width: 45px;
+  height: 45px;
+  margin-left: 84px;
+}
+
+.jsIcon {
+  width: 45px;
+  height: 45px;
+  margin-left: 22px;
+}
+
+.tsIcon {
+  width: 43px;
+  height: 43px;
+  margin-left: 20px;
+}
+
+.mongoIcon {
+  width: 59px;
+  margin-left: 19px;
+}
+
+.postmanIcon {
+  width: 55px;
+  margin-left: 40px;
+}
+
+.apiIcon {
+  width: 80px;
+  margin-left: 18px;
+}
+
+.nodeIcon {
+  width: 50px;
+  margin-left: 40px;
+}
+
+.mongooseIcon {
+  width: 55px;
+  margin-left: 17px;
+}
+
+.bootstrapIcon {
+  width: 54px;
+  margin-left: 23px;
+}
+
+.reactIcon {
+  width: 54px;
+  margin-left: 62px;
+}
+
+.reduxIcon {
+  width: 54px;
+  margin-left: 56px;
+}
+
+.awsIcon {
+  width: 54px;
+  margin-left: 70px;
+}
+
+.backEndSkills {
+  width: 300px;
+  height: 600px;
+  /* margin-left: 50px; */
+  background-color: white;
+  border-radius: 0 25px 25px 0;
+  padding: 20px;
+  padding-left: 63px;
+  border: 3px;
+  border-left: 0px;
+  border-color: lightgray;
+  border-style: solid;
+}
+
+@media (max-width: 1300px) {
+  .aboutContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutContainerReveal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skillsContainer {
+    margin-left: 0%;
+    align-self: center;
+  }
+
+  .aboutTextContainer {
+    margin-right: 0%;
+    align-self: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .skillsContainer {
+    width: 100%;
+  }
+
+  .about {
+    margin-top: 0px;
+  }
+
+  .aboutSectionContainer {
+    margin-right: 0px;
+  }
+
+  .aboutSkillsContainer {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 700px) {
+  .skillTechnologies {
+    width: 90%;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-left: 0;
+  }
+
+  .frontEndSkills {
+    margin-right: 0px;
+    border-radius: 30px;
+  }
+
+  .backEndSkills {
+    margin-left: 0px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border-left: 3px;
+  }
+}
+
+@media (max-width: 700px) {
+  .backEndSkills {
+    border: solid 3px lightgray;
+  }
+}
+
+@media (min-width: 600px) {
+  .aboutContainer {
+    animation: opacityReveal 1s linear;
+  }
+
+  .aboutContainerReveal {
+    opacity: 0;
+    animation: opacityHide 1s linear;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutSkillsContainer {
+    width: 300px;
+  }
+}
