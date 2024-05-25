@@ -1,0 +1,16 @@
+.workPageContainer {
+  margin-top: 100px;
+  z-index: 2;
+}
+
+@media (max-width: 1000px) {
+  .workPageContainer {
+    display: flex;
+  }
+}
+
+@media (min-width: 1000px) {
+  .workPageContainer {
+    display: none;
+  }
+}

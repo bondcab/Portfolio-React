@@ -4,11 +4,14 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import styles from "./Carousel.module.css";
 import { useState } from "react";
 
-function Carousel() {
+function Carousel({ setInfoReact, setMoreInfoClicked }) {
   const [carouselPlaying, setCarouselPlaying] = useState(true);
 
   function handleReactBondButtonClick() {
+    console.log("More info react clicked");
     setCarouselPlaying(false);
+    setMoreInfoClicked(true);
+    setInfoReact(true);
   }
 
   function handlePokemonButtonClick() {
@@ -47,11 +50,12 @@ function Carousel() {
       <Slider>
         <Slide index={0}>
           <div className={styles.buttonContainer}>
-            <div
+            <button
               className={styles.carouselButton}
               onClick={handleReactBondButtonClick}
-            ></div>
-            <p className={styles.buttonText}>More Info</p>
+            >
+              More Info
+            </button>
           </div>
           <a
             href="https://mybond-flix.netlify.app/login"
@@ -60,7 +64,7 @@ function Carousel() {
           >
             <div
               className={styles.bondFlixImageOverlay}
-              onClick={() => console.log("Clicked")}
+              onClick={handleReactBondButtonClick}
             ></div>
           </a>
         </Slide>

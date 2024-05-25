@@ -111,7 +111,7 @@
   align-items: center;
   font-weight: 600;
   cursor: pointer;
-  z-index: 5;
+  z-index: 6;
   align-self: flex-end;
   width: 20%;
   height: 10%;
@@ -166,7 +166,7 @@
   align-items: center;
   font-weight: 600;
   cursor: pointer;
-  z-index: 5;
+  z-index: 8;
   align-self: flex-end;
   width: 20%;
   height: 10%;

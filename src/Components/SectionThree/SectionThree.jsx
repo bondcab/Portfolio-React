@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import styles from "./SectionThree.module.css";
 
 function SectionThree({ setAbout, setHome, setContact, setWork }) {
   const [pokemonGitHovered, setPokemonGitHovered] = useState(false);
@@ -13,12 +14,6 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
   const [angularSiteHovered, setAngularSiteHovered] = useState(false);
   const [apiDocHovered, setApiDocHovered] = useState(false);
   const [bondCaseStudyHovered, setBondCasyStudyHovered] = useState(false);
-  // const [pokemonHover, setPokemonHover] = useState(true);
-  // const [apiHover, setAPIHover] = useState(true);
-  // const [reactHover, setReactHover] = useState(true);
-  // const [meetHover, setMeetHover] = useState(true);
-  // const [chatHover, setChatHover] = useState(true);
-  // const [angularHover, setAngularHover] = useState(true);
   const pokemonHover = true;
   const apiHover = true;
   const reactHover = true;
@@ -150,56 +145,8 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
     setBondCasyStudyHovered(false);
   }
 
-  // function handleOverPokemon() {
-  //   setPokemonHover(true);
-  // }
-
-  // function handleOffPokemon() {
-  //   setPokemonHover(false);
-  // }
-
-  // function handleOverAPI() {
-  //   setAPIHover(true);
-  // }
-
-  // function handleOffAPI() {
-  //   setAPIHover(false);
-  // }
-
-  // function handleOverReact() {
-  //   setReactHover(true);
-  // }
-
-  // function handleOffReact() {
-  //   setReactHover(false);
-  // }
-
-  // function handleOverMeet() {
-  //   setMeetHover(true);
-  // }
-
-  // function handleOffMeet() {
-  //   setMeetHover(false);
-  // }
-
-  // function handleOverChat() {
-  //   setChatHover(true);
-  // }
-
-  // function handleOffChat() {
-  //   setChatHover(false);
-  // }
-
-  // function handleOverAngular() {
-  //   setAngularHover(true);
-  // }
-
-  // function handleOffAngular() {
-  //   setAngularHover(false);
-  // }
-
   return (
-    <div className="workPageContainer">
+    <div className={styles.workPageContainer}>
       <div className="blueBackground"></div>
       <section className={visible ? "workSection" : "workSectionReveal"}>
         <div className="workHeadingContainer">
@@ -209,11 +156,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
         </div>
 
         <div className="grid" ref={domRefWork}>
-          <div
-            className="grid__item"
-            // onMouseOver={handleOverReact}
-            // onMouseOut={handleOffReact}
-          >
+          <div className="grid__item">
             <h2 className="project-titles">myBond Flix App (React)</h2>
             <p className="workText">
               In this project, I crafted the frontend of the James Bond Movies
@@ -308,11 +251,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div
-            className="grid__item"
-            // onMouseOver={handleOverPokemon}
-            // onMouseOut={handleOffPokemon}
-          >
+          <div className="grid__item">
             <h2 className="project-titles">Pokedex App</h2>
             <p className="workText">
               A small web application built with HTML, CSS, and JavaScript that
@@ -387,11 +326,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div
-            className="grid__item"
-            // onMouseOver={handleOverAPI}
-            // onMouseOut={handleOffAPI}
-          >
+          <div className="grid__item">
             <h2 className="project-titles">ToDo List App</h2>
             <p className="workText">
               A ToDo list app created with React JS. Tried to imitate a sticky
@@ -457,11 +392,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
             </div>
           </div>
 
-          <div
-            className="grid__item"
-            // onMouseOver={handleOverMeet}
-            // onMouseOut={handleOffMeet}
-          >
+          <div className="grid__item">
             <h2 className="project-titles">Meet App</h2>
             <p className="workText">
               A serverless, progressive web application (PWA) built with React
@@ -536,11 +467,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div
-            className="grid__item"
-            // onMouseOver={handleOverChat}
-            // onMouseOut={handleOffChat}
-          >
+          <div className="grid__item">
             <h2 className="project-titles">Chat Away</h2>
             <p className="workText">
               A chat app for mobile devices built using React Native. The app
@@ -592,11 +519,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div
-            className="grid__item"
-            // onMouseOver={handleOverAngular}
-            // onMouseOut={handleOffAngular}
-          >
+          <div className="grid__item">
             <h2 className="project-titles">myBond Flix App (Angular)</h2>
             <p className="workText">
               In this project I undertook the redesign of myBond Flixs front-end
@@ -674,11 +597,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div
-            className="grid__item"
-            // onMouseOver={handleOverAPI}
-            // onMouseOut={handleOffAPI}
-          >
+          <div className="grid__item">
             <h2 className="project-titles">Rest API</h2>
             <p className="workText">
               The server-side component of a James Bond movies web application.
