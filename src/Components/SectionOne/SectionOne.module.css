@@ -2,7 +2,8 @@
   --webpage-white: white;
   --webpage-colour-01: rgb(235, 235, 235);
   --webpage-colour-02: rgb(116, 116, 116);
-  --webpage-button-solid: rgb(58, 58, 58);
+  --webpage-colour-03: rgb(58, 58, 58);
+  --webpage-colour-04: rgba(201, 201, 201, 0.1);
 }
 
 @keyframes opacityReveal {
@@ -27,9 +28,10 @@
 
 .landingPageContainer {
   display: flex;
+  position: relative;
   background-color: var(--webpage-white);
   padding-bottom: 30px;
-  border-bottom: solid var(--webpage-colour-01) 15px;
+  border-bottom: solid var(--webpage-colour-04) 180px;
   height: 100vh;
 }
 
@@ -37,7 +39,7 @@
   display: flex;
   background-color: var(--webpage-white);
   padding-bottom: 30px;
-  border-bottom: solid var(--webpage-colour-01) 15px;
+  border-bottom: solid var(--webpage-colour-04) 180px;
   height: 100vh;
 }
 
@@ -73,7 +75,7 @@
 
 .projectsButton {
   box-sizing: border-box;
-  background-color: var(--webpage-button-solid);
+  background-color: var(--webpage-colour-03);
   color: var(--webpage-white);
   font-size: 17px;
   border: none;
@@ -128,6 +130,18 @@
   transform: translate(-800px, -1120px);
   z-index: 1;
 }
+
+/* .sectionOneLightGrey {
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  align-self: flex-end;
+  background: linear-gradient(
+    to bottom,
+    white 60%,
+    var(--webpage-colour-04) 70%
+  );
+} */
 
 @media (min-width: 1650px) {
   .sectionOneWhite {

@@ -31,7 +31,6 @@ function MoreInfoReact() {
   }
 
   return (
-    // <div className={styles.moreInfoContainer}>
     <div className={styles.moreInfo}>
       <h2 className={styles.projectTitles}>myBond Flix App (React)</h2>
       <p className={styles.workText}>
@@ -42,29 +41,29 @@ function MoreInfoReact() {
       </p>
       <div className={styles.center}>
         <p className="technologies">
-          <span className="bold">Technologies Used: </span>
+          <span className={styles.bold}>Technologies Used: </span>
           <br></br>
           CSS, JavaScript, React
         </p>
       </div>
       <div className={styles.linkContainer}>
         {reactGitHovered ? (
-          <div className="pokemonGitPopup">
-            <h4 className="popupText">
+          <div className={styles.pokemonGitPopup}>
+            <h4 className={styles.popupText}>
               Link to myBond Flix React app Github repository
             </h4>
           </div>
         ) : null}
         {reactSiteHovered ? (
-          <div className="pokemonGitPopup">
-            <h4 className="popupText">
+          <div className={styles.pokemonGitPopup}>
+            <h4 className={styles.popupText}>
               Link to myBond Flix React app live site
             </h4>
           </div>
         ) : null}
         {bondCaseStudyHovered ? (
-          <div className="pokemonGitPopup">
-            <h4 className="popupText">Link to myBond Flix case study</h4>
+          <div className={styles.pokemonGitPopup}>
+            <h4 className={styles.popupText}>Link to myBond Flix case study</h4>
           </div>
         ) : null}
         <a
@@ -73,7 +72,7 @@ function MoreInfoReact() {
           rel="noreferrer"
         >
           <img
-            className="pokemonGithub"
+            className={styles.pokemonGithub}
             alt="github"
             src="github.svg"
             onMouseOver={handleMouseOver4}
@@ -86,7 +85,7 @@ function MoreInfoReact() {
           rel="noreferrer"
         >
           <img
-            className="pokemonLive"
+            className={styles.pokemonLive}
             alt="pokedex-site-link"
             src="web.png"
             onMouseOver={handleMouseOver5}
@@ -99,7 +98,7 @@ function MoreInfoReact() {
           rel="noreferrer"
         >
           <img
-            className="caseStudy"
+            className={styles.caseStudy}
             alt="myBondFlix case study"
             src="document.png"
             onMouseOver={handleMouseOver11}
@@ -108,7 +107,6 @@ function MoreInfoReact() {
         </a>
       </div>
     </div>
-    // </div>
   );
 }
 

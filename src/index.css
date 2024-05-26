@@ -214,18 +214,18 @@ html body {
 
 /* Work Page Styling */
 
-.blueBackground {
+/* .blueBackground {
   position: absolute;
   background-color: var(--webpage-blue);
   width: 100%;
   height: 100%;
   z-index: -1;
-}
+} */
 
-.workText {
+/* .workText {
   font-weight: 600;
   font-size: 20px;
-}
+} */
 
 a {
   color: var(--website-green);
@@ -270,15 +270,15 @@ a:active {
   color: var(--webpage-black);
 }
 
-.grid {
+/* .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   padding-left: 2%;
   padding-right: 3%;
-}
+} */
 
-.grid__item {
+/* .grid__item {
   display: inline-block;
   width: 33%;
   padding: 5%;
@@ -328,41 +328,36 @@ a:active {
     grid-gap: 10px;
   }
 
-  /* .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  } */
 
   h1 {
     font-size: 22px;
   }
-}
+} */
 
-.popupText {
+/* .popupText {
   text-align: center;
   padding: 10px;
-}
+} */
 
-.workHeadingContainer {
+/* .workHeadingContainer {
   display: flex;
   justify-content: center;
-}
+} */
 
-.work-heading {
+/* .work-heading {
   text-align: center;
-  /* background-color: black; */
   width: 200px;
   border-radius: 15px;
   opacity: 1;
   font-weight: 700;
   font-style: italic;
   font-size: 2.5em;
-}
+} */
 
-.project-titles {
+/* .project-titles {
   text-align: center;
   font-size: 30px;
-}
+} */
 
 .whiteMask {
   /* background-color: red; */
@@ -371,15 +366,15 @@ a:active {
   height: 30px;
 }
 
-.pokedexImageContainer {
+/* .pokedexImageContainer {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
+} */
 
-.apiImageContainer {
+/* .apiImageContainer {
   width: 100%;
   height: 100%;
   display: flex;
@@ -417,9 +412,9 @@ a:active {
   height: 100%;
   flex-direction: column;
   justify-content: flex-end;
-}
+} */
 
-.pokedexImage {
+/* .pokedexImage {
   width: 100%;
   align-self: flex-end;
   border: solid #3a3a3a 2px;
@@ -438,20 +433,18 @@ a:active {
   align-self: flex-end;
   border: solid #3a3a3a 2px;
   border-radius: 12px;
-}
+} */
 
-.imageContainer {
-  /* border: solid blue; */
+/* .imageContainer {
   border-radius: 12px;
   z-index: 7;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* filter: blur(0px); */
-}
+} */
 
-.angularImage {
+/* .angularImage {
   width: 100%;
   align-self: flex-end;
   border: solid #3a3a3a 2px;
@@ -463,9 +456,9 @@ a:active {
   align-self: flex-end;
   border: solid #3a3a3a 2px;
   border-radius: 12px;
-}
+} */
 
-@media (min-width: 700px) {
+/* @media (min-width: 700px) {
   .imageCover {
     background-color: white;
     width: 100%;
@@ -495,9 +488,9 @@ a:active {
     align-items: center;
     filter: blur(0px);
   }
-}
+} */
 
-.linkContainer {
+/* .linkContainer {
   border-top: solid rgba(0, 0, 0, 0.3) 1px;
   height: 130px;
   display: flex;
@@ -505,9 +498,9 @@ a:active {
   justify-content: center;
   margin-top: 30px;
   height: 60px;
-}
+} */
 
-.pokemonGithub {
+/* .pokemonGithub {
   width: 45px;
   margin-left: 10px;
   margin-right: 10px;
@@ -528,9 +521,9 @@ a:active {
   margin-left: 13px;
   margin-right: 10px;
   margin-top: 10px;
-}
+} */
 
-.pokemonGitPopup {
+/* .pokemonGitPopup {
   border: solid black;
   background-color: white;
   border-radius: 12px;
@@ -539,9 +532,9 @@ a:active {
   position: absolute;
   transform: translateY(-100px);
   z-index: 8;
-}
+} */
 
-.pokemonSitePopup {
+/* .pokemonSitePopup {
   border: solid black;
   background-color: white;
   border-radius: 12px;
@@ -550,12 +543,12 @@ a:active {
   position: absolute;
   transform: translateY(-100px);
   z-index: 8;
-}
+} */
 
-.bold {
+/* .bold {
   font-weight: bold;
   font-size: 20px;
-}
+} */
 
 /* Contact Page Styling */
 .contactPageContainer {
@@ -743,26 +736,6 @@ a:active {
 
 /* Section One */
 /* Landing Page */
-
-.sectionTwoContainer {
-  /* border: solid red; */
-  height: 500px;
-  z-index: 5;
-}
-
-@media (max-width: 1000px) {
-  .about {
-    margin-top: 0px;
-  }
-
-  .aboutTextContainer {
-    margin-top: 0px;
-  }
-}
-
-.about {
-  color: black;
-}
 
 /* Carousel Dots */
 .carousel__dot {

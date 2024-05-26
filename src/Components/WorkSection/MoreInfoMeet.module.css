@@ -10,6 +10,11 @@
   align-items: center;
 }
 
+.bold {
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .moreInfo {
   position: absolute;
   background-color: white;
@@ -19,11 +24,6 @@
   padding-left: 3%;
   padding-right: 3%;
   z-index: 8;
-}
-
-.bold {
-  font-weight: bold;
-  font-size: 20px;
 }
 
 .linkContainer {

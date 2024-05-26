@@ -21,11 +21,6 @@
   z-index: 8;
 }
 
-.bold {
-  font-weight: bold;
-  font-size: 20px;
-}
-
 .linkContainer {
   border-top: solid rgba(0, 0, 0, 0.3) 1px;
   height: 130px;
@@ -51,6 +46,11 @@
 .center {
   display: flex;
   justify-content: center;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .pokemonGitPopup {

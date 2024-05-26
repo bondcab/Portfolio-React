@@ -147,36 +147,34 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
 
   return (
     <div className={styles.workPageContainer}>
-      <div className="blueBackground"></div>
-      <section className={visible ? "workSection" : "workSectionReveal"}>
-        <div className="workHeadingContainer">
-          <h1 className="work-heading" id="#sectionThree">
+      <div className={styles.blueBackground}></div>
+      <section
+        className={visible ? styles.workSection : styles.workSectionReveal}
+      >
+        <div className={styles.workHeadingContainer}>
+          <h1 className={styles.workHeading} id="#sectionThree">
             Work
           </h1>
         </div>
 
-        <div className="grid" ref={domRefWork}>
-          <div className="grid__item">
-            <h2 className="project-titles">myBond Flix App (React)</h2>
-            <p className="workText">
+        <div className={styles.grid} ref={domRefWork}>
+          <div className={styles.grid__item}>
+            <h2 className={styles.projectTitles}>myBond Flix App (React)</h2>
+            <p className={styles.workText}>
               In this project, I crafted the frontend of the James Bond Movies
               App with ReactJS. Collaborating seamlessly with the Rest API
               project, I successfully delivered a comprehensive full-stack
               application utilizing the MERN stack
             </p>
 
-            <div className="reactImageContainer">
-              <p className="technologies">
-                <span className="bold">Technologies Used: </span>
+            <div className={styles.reactImageContainer}>
+              <p>
+                <span className={styles.bold}>Technologies Used: </span>
                 <br></br>
                 CSS, JavaScript, React
               </p>
-              <div
-                className={
-                  reactHover ? "imageContainerNoBlur" : "imageContainer"
-                }
-              >
-                <div className={reactHover ? null : "imageCover"}></div>
+              <div className={styles.imageContainerNoBlur}>
+                <div className={reactHover ? null : styles.imageCover}></div>
                 <a
                   href="https://mybond-flix.netlify.app/login"
                   target="_blank"
@@ -185,29 +183,31 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                   <img
                     src="bondApp.png"
                     alt="bondFlix-react"
-                    className="reactImage"
+                    className={styles.reactImage}
                   />
                 </a>
               </div>
             </div>
-            <div className="linkContainer">
+            <div className={styles.linkContainer}>
               {reactGitHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">
+                <div className={styles.pokemonGitPopup}>
+                  <h4 className={styles.popupText}>
                     Link to myBond Flix React app Github repository
                   </h4>
                 </div>
               ) : null}
               {reactSiteHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">
+                <div className={styles.pokemonGitPopup}>
+                  <h4 className={styles.popupText}>
                     Link to myBond Flix React app live site
                   </h4>
                 </div>
               ) : null}
               {bondCaseStudyHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">Link to myBond Flix case study</h4>
+                <div className={styles.pokemonGitPopup}>
+                  <h4 className={styles.popupText}>
+                    Link to myBond Flix case study
+                  </h4>
                 </div>
               ) : null}
               <a
@@ -216,7 +216,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="pokemonGithub"
+                  className={styles.pokemonGithub}
                   alt="github"
                   src="github.svg"
                   onMouseOver={handleMouseOver4}
@@ -229,7 +229,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="pokemonLive"
+                  className={styles.pokemonLive}
                   alt="pokedex-site-link"
                   src="web.png"
                   onMouseOver={handleMouseOver5}
@@ -242,7 +242,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="caseStudy"
+                  className={styles.caseStudy}
                   alt="myBondFlix case study"
                   src="document.png"
                   onMouseOver={handleMouseOver11}
@@ -251,26 +251,28 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div className="grid__item">
-            <h2 className="project-titles">Pokedex App</h2>
-            <p className="workText">
+          <div className={styles.grid__item}>
+            <h2 className={styles.projectTitles}>Pokedex App</h2>
+            <p className={styles.workText}>
               A small web application built with HTML, CSS, and JavaScript that
               loads data from an external API and enables the viewing of data
               points in detail
             </p>
 
-            <div className="pokedexImageContainer">
-              <p className="technologies">
-                <span className="bold">Technologies Used: </span>
+            <div className={styles.pokedexImageContainer}>
+              <p>
+                <span className={styles.bold}>Technologies Used: </span>
                 <br></br>
                 HTML, CSS, JavaScript
               </p>
               <div
                 className={
-                  pokemonHover ? "imageContainerNoBlur" : "imageContainer"
+                  pokemonHover
+                    ? styles.imageContainerNoBlur
+                    : styles.imageContainer
                 }
               >
-                <div className={pokemonHover ? null : "imageCover"}></div>
+                <div className={pokemonHover ? null : styles.imageCover}></div>
                 <a
                   href="https://bondcab.github.io/Pokemon_App/"
                   target="_blank"
@@ -279,22 +281,24 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                   <img
                     src="pokedex.png"
                     alt="pokedex"
-                    className="pokedexImage"
+                    className={styles.pokedexImage}
                   />
                 </a>
               </div>
             </div>
-            <div className="linkContainer">
+            <div className={styles.linkContainer}>
               {pokemonGitHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">
+                <div className={styles.pokemonGitPopup}>
+                  <h4 className={styles.popupText}>
                     Link to Pokedex app Github repository
                   </h4>
                 </div>
               ) : null}
               {pokemonSiteHovered ? (
-                <div className="pokemonSitePopup">
-                  <h4 className="popupText">Link to Pokedex app live site</h4>
+                <div className={styles.pokemonSitePopup}>
+                  <h4 className={styles.popupText}>
+                    Link to Pokedex app live site
+                  </h4>
                 </div>
               ) : null}
 
@@ -304,7 +308,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="pokemonGithub"
+                  className={styles.pokemonGithub}
                   alt="github"
                   src="github.svg"
                   onMouseOver={handleMouseOver1}
@@ -317,7 +321,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="pokemonLive"
+                  className={styles.pokemonLive}
                   alt="pokedex-site-link"
                   src="web.png"
                   onMouseOver={handleMouseOver2}
@@ -326,41 +330,47 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div className="grid__item">
-            <h2 className="project-titles">ToDo List App</h2>
-            <p className="workText">
+          <div className={styles.grid__item}>
+            <h2 className={styles.projectTitles}>ToDo List App</h2>
+            <p className={styles.workText}>
               A ToDo list app created with React JS. Tried to imitate a sticky
-              note style. Persistence enabled with local storage.
+              note style. Persistence enabled with local storage
             </p>
 
-            <div className="apiImageContainer">
-              <p className="technologies">
-                <span className="bold">Technologies Used: </span>
+            <div className={styles.apiImageContainer}>
+              <p>
+                <span className={styles.bold}>Technologies Used: </span>
                 <br></br>
                 HTML, CSS, JavaScript, React JS
               </p>
               <div
-                className={apiHover ? "imageContainerNoBlur" : "imageContainer"}
+                className={
+                  apiHover ? styles.imageContainerNoBlur : styles.imageContainer
+                }
               >
-                <div className={apiHover ? null : "imageCover"}></div>
+                <div className={apiHover ? null : styles.imageCover}></div>
                 <a
                   href="https://cbond-todolist-application.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="ToDo.png" alt="api" className="apiImage" />
+                  <img src="ToDo.png" alt="api" className={styles.apiImage} />
                 </a>
               </div>
             </div>
-            <div className="linkContainer">
+            <div className={styles.linkContainer}>
               {apiGitHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">Link to API Github repository</h4>
+                <div className={styles.pokemonGitPopup}>
+                  <h4 className={styles.popupText}>
+                    Link to ToDo List app Github repository
+                  </h4>
                 </div>
               ) : null}
               {apiDocHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">Link to live site</h4>
+                <div className={styles.pokemonGitPopup}>
+                  <h4 className={styles.popupText}>
+                    Link to ToDo List app live site
+                  </h4>
                 </div>
               ) : null}
               <a
@@ -369,7 +379,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="pokemonGithub"
+                  className={styles.pokemonGithub}
                   alt="github"
                   src="github.svg"
                   onMouseOver={handleMouseOver3}
@@ -382,7 +392,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="pokemonLive"
+                  className={styles.pokemonLive}
                   alt="github"
                   src="web.png"
                   onMouseOver={handleMouseOver0}
@@ -392,27 +402,29 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
             </div>
           </div>
 
-          <div className="grid__item">
-            <h2 className="project-titles">Meet App</h2>
-            <p className="workText">
+          <div className={styles.grid__item}>
+            <h2 className={styles.projectTitles}>Meetup App</h2>
+            <p className={styles.workText}>
               A serverless, progressive web application (PWA) built with React
               using a test-driven development (TDD) technique. The application
               uses the Google Calendar API to fetch upcoming events
             </p>
 
-            <div className="meetImageContainer">
-              <p className="technologies">
-                <span className="bold">Technologies Used: </span>
+            <div className={styles.meetImageContainer}>
+              <p>
+                <span className={styles.bold}>Technologies Used: </span>
                 <br></br>
                 CSS, JavaScript, React, AWS Lambda, Google Calendar API, OAuth2,
                 Data Visualisation (Recharts)
               </p>
               <div
                 className={
-                  meetHover ? "imageContainerNoBlur" : "imageContainer"
+                  meetHover
+                    ? styles.imageContainerNoBlur
+                    : styles.imageContainer
                 }
               >
-                <div className={meetHover ? null : "imageCover"}></div>
+                <div className={meetHover ? null : styles.imageCover}></div>
                 <a
                   href="https://bondcab.github.io/Meet/"
                   target="_blank"
@@ -421,22 +433,24 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                   <img
                     src="meet.png"
                     alt="bondFlix-react"
-                    className="reactImage"
+                    className={styles.reactImage}
                   />
                 </a>
               </div>
             </div>
-            <div className="linkContainer">
+            <div className={styles.linkContainer}>
               {meetGitHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">
+                <div className={styles.pokemonGitPopup}>
+                  <h4 className={styles.popupText}>
                     Link to Meet app Github repository
                   </h4>
                 </div>
               ) : null}
               {meetSiteHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">Link to Meet app live site</h4>
+                <div className={styles.pokemonGitPopup}>
+                  <h4 className={styles.popupText}>
+                    Link to Meet app live site
+                  </h4>
                 </div>
               ) : null}
               <a
@@ -445,7 +459,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="pokemonGithub"
+                  className={styles.pokemonGithub}
                   alt="github"
                   src="github.svg"
                   onMouseOver={handleMouseOver6}
@@ -458,7 +472,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="pokemonLive"
+                  className={styles.pokemonLive}
                   alt="pokedex-site-link"
                   src="web.png"
                   onMouseOver={handleMouseOver7}
@@ -467,38 +481,40 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div className="grid__item">
-            <h2 className="project-titles">Chat Away</h2>
-            <p className="workText">
+          <div className={styles.grid__item}>
+            <h2 className={styles.projectTitles}>Chat Away</h2>
+            <p className={styles.workText}>
               A chat app for mobile devices built using React Native. The app
               will provide users with a chat interface and options to share
               images and their location
             </p>
 
-            <div className="chatImageContainer">
-              <p className="technologies">
-                <span className="bold">Technologies Used: </span>
+            <div className={styles.chatImageContainer}>
+              <p>
+                <span className={styles.bold}>Technologies Used: </span>
                 <br></br>
                 CSS, JavaScript, React Native, Expo, Google Firestore Database,
                 Firebase Authentication, Gifted Chat Library
               </p>
               <div
                 className={
-                  chatHover ? "imageContainerNoBlur" : "imageContainer"
+                  chatHover
+                    ? styles.imageContainerNoBlur
+                    : styles.imageContainer
                 }
               >
-                <div className={chatHover ? null : "imageCover"}></div>
+                <div className={chatHover ? null : styles.imageCover}></div>
                 <img
                   src="chat_background.png"
                   alt="meet-01"
-                  className="chatImage01"
+                  className={styles.chatImage01}
                 />
               </div>
             </div>
-            <div className="linkContainer">
+            <div className={styles.linkContainer}>
               {chatGitHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">
+                <div className={styles.pokemonGitPopup}>
+                  <h4 className={styles.popupText}>
                     Link to Chat Away app Github repository
                   </h4>
                 </div>
@@ -510,7 +526,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="pokemonGithub"
+                  className={styles.pokemonGithub}
                   alt="github"
                   src="github.svg"
                   onMouseOver={handleMouseOver8}
@@ -519,28 +535,30 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div className="grid__item">
-            <h2 className="project-titles">myBond Flix App (Angular)</h2>
-            <p className="workText">
+          <div className={styles.grid__item}>
+            <h2 className={styles.projectTitles}>myBond Flix App (Angular)</h2>
+            <p className={styles.workText}>
               In this project I undertook the redesign of myBond Flixs front-end
               using Angular, infusing a modern touch to elevate user
-              interactions.
+              interactions
             </p>
 
-            <div className="angularImageContainer">
-              <p className="technologies">
-                <span className="bold" ref={domRefWork}>
-                  Technologies Used:{" "}
+            <div className={styles.angularImageContainer}>
+              <p>
+                <span className={styles.bold} ref={domRefWork}>
+                  Technologies Used:
                 </span>
                 <br></br>
                 HTML, CSS, JavaScript, TypeScript, Angular
               </p>
               <div
                 className={
-                  angularHover ? "imageContainerNoBlur" : "imageContainer"
+                  angularHover
+                    ? styles.imageContainerNoBlur
+                    : styles.imageContainer
                 }
               >
-                <div className={angularHover ? null : "imageCover"}></div>
+                <div className={angularHover ? null : styles.imageCover}></div>
                 <a
                   href="https://bondcab.github.io/myBondFlix-Angular-client/welcome"
                   target="_blank"
@@ -549,22 +567,22 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                   <img
                     src="bondFlixAngular.png"
                     alt="bondFlix-angular"
-                    className="angularImage"
+                    className={styles.angularImage}
                   />
                 </a>
               </div>
             </div>
-            <div className="linkContainer">
+            <div className={styles.linkContainer}>
               {angularGitHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">
+                <div className={styles.pokemonGitPopup}>
+                  <h4 className={styles.popupText}>
                     Link to myBond Flix Angular app Github repository
                   </h4>
                 </div>
               ) : null}
               {angularSiteHovered ? (
-                <div className="pokemonSitePopup">
-                  <h4 className="popupText">
+                <div className={styles.pokemonSitePopup}>
+                  <h4 className={styles.popupText}>
                     Link to myBond Flix Angular app live site
                   </h4>
                 </div>
@@ -575,7 +593,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="pokemonGithub"
+                  className={styles.pokemonGithub}
                   alt="github"
                   src="github.svg"
                   onMouseOver={handleMouseOver9}
@@ -588,7 +606,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="pokemonLive"
+                  className={styles.pokemonLive}
                   alt="pokedex-site-link"
                   src="web.png"
                   onMouseOver={handleMouseOver10}
@@ -597,9 +615,9 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               </a>
             </div>
           </div>
-          <div className="grid__item">
-            <h2 className="project-titles">Rest API</h2>
-            <p className="workText">
+          <div className={styles.grid__item}>
+            <h2 className={styles.projectTitles}>Rest API</h2>
+            <p className={styles.workText}>
               The server-side component of a James Bond movies web application.
               The web application will provide users with access to information
               about different Bond films, directors, and lead actors. Users will
@@ -607,34 +625,33 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
               a list of their favorite movies
             </p>
 
-            <div className="apiImageContainer">
-              <p className="technologies">
-                <span className="bold">Technologies Used: </span>
+            <div className={styles.apiImageContainer}>
+              <p>
+                <span className={styles.bold}>Technologies Used: </span>
                 <br></br>
                 MongoDB, Express.JS, Node.JS, JavaScript
               </p>
               <div
-                className={apiHover ? "imageContainerNoBlur" : "imageContainer"}
+                className={
+                  apiHover ? styles.imageContainerNoBlur : styles.imageContainer
+                }
               >
-                <div className={apiHover ? null : "imageCover"}></div>
-                {/* <a
-                  href="https://bond-flix-9c1709905a90.herokuapp.com/documentation"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src="API.png" alt="api" className="apiImage" />
-                </a> */}
+                <div className={apiHover ? null : styles.imageCover}></div>
               </div>
             </div>
-            <div className="linkContainer">
+            <div className={styles.linkContainer}>
               {apiGitHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">Link to API Github repository</h4>
+                <div className={styles.pokemonGitPopup}>
+                  <h4 className={styles.popupText}>
+                    Link to API Github repository
+                  </h4>
                 </div>
               ) : null}
               {apiDocHovered ? (
-                <div className="pokemonGitPopup">
-                  <h4 className="popupText">Link to API documentation</h4>
+                <div className={styles.pokemonGitPopup}>
+                  <h4 className={styles.popupText}>
+                    Link to API documentation
+                  </h4>
                 </div>
               ) : null}
               <a
@@ -643,7 +660,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="pokemonGithub"
+                  className={styles.pokemonGithub}
                   alt="github"
                   src="github.svg"
                   onMouseOver={handleMouseOver3}
@@ -656,7 +673,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                 rel="noreferrer"
               >
                 <img
-                  className="pokemonLive"
+                  className={styles.pokemonLive}
                   alt="github"
                   src="web.png"
                   onMouseOver={handleMouseOver0}

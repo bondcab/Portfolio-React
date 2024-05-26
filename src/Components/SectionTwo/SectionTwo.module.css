@@ -1,3 +1,11 @@
+:root {
+  --webpage-white: white;
+  --webpage-colour-01: rgb(235, 235, 235);
+  --webpage-colour-02: rgb(116, 116, 116);
+  --webpage-colour-03: rgb(58, 58, 58);
+  --webpage-colour-04: rgba(201, 201, 201, 0.1);
+}
+
 @keyframes opacityReveal {
   from {
     opacity: 0;
@@ -22,29 +30,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--webpage-blue);
-  background-color: white;
-  /* border: solid red 3px; */
+  background-color: var(--webpage-white);
 }
 
 .aboutContainer {
   display: flex;
   width: 90%;
   justify-content: center;
-  /* background-color: rgb(223, 223, 223); */
-  /* border: solid blue 3px; */
 }
 
 .aboutContainerReveal {
   display: flex;
   width: 90%;
   justify-content: center;
-  /* background-color: rgb(223, 223, 223); */
-  /* border: solid blue 3px; */
 }
 
 .sectionContainer {
-  /* border: solid yellow 3px; */
   flex: 1;
   display: flex;
   justify-content: center;
@@ -55,7 +56,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  /* border: solid orange 3px; */
 }
 
 .aboutTextContainer {
@@ -66,13 +66,11 @@
   align-self: flex-start;
   height: 606px;
   border: 3px;
-  /* border-color: red; */
-  /* border-style: solid; */
   background-color: rgba(211, 211, 211, 0);
 }
 
 .aboutTextSubContainer {
-  border: solid lightgray 3px;
+  border: solid var(--webpage-colour-01) 3px;
   width: 100%;
   padding: 20px;
   border-radius: 25px;
@@ -86,7 +84,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: solid pink 3px; */
 }
 
 .about {
@@ -105,32 +102,23 @@
 
 .skillsContainer {
   margin-bottom: 50px;
-  /* border: solid green 3px; */
-  /* height: 600px; */
-  /* display: flex; */
 }
 
 .skillTechnologies {
   display: flex;
-
-  /* width: 680px; */
   justify-content: center;
-  /* padding-left: 50px; */
-  /* padding-right: 50px; */
-  /* margin-left: 50px; */
 }
 
 .frontEndSkills {
   width: 300px;
   height: 600px;
-  /* margin-right: 50px; */
   background-color: white;
   border-radius: 25px 0 0 25px;
   padding: 20px;
   padding-left: 63px;
   border: 3px;
   border-right: 3px;
-  border-color: lightgray;
+  border-color: var(--webpage-colour-01);
   border-style: solid;
 }
 
@@ -229,8 +217,17 @@
   padding-left: 63px;
   border: 3px;
   border-left: 0px;
-  border-color: lightgray;
+  border-color: var(--webpage-colour-01);
   border-style: solid;
+}
+
+.sectionTwoContainer {
+  height: 500px;
+  z-index: 5;
+}
+
+.about {
+  color: black;
 }
 
 @media (max-width: 1300px) {
@@ -273,11 +270,20 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .about {
+    margin-top: 0px;
+  }
+
+  .aboutTextContainer {
+    margin-top: 0px;
+  }
+}
+
 @media (max-width: 700px) {
   .skillTechnologies {
     width: 90%;
     flex-direction: column;
-    /* align-items: center; */
     margin-left: 0;
   }
 

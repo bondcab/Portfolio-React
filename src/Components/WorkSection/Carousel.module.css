@@ -1,3 +1,11 @@
+:root {
+  --webpage-white: white;
+  --webpage-colour-01: rgb(235, 235, 235);
+  --webpage-colour-02: rgb(116, 116, 116);
+  --webpage-colour-03: rgb(58, 58, 58);
+  --webpage-colour-04: rgba(201, 201, 201, 0.1);
+}
+
 .carousel {
   width: 65%;
 }
@@ -16,7 +24,6 @@
   background-size: cover;
   border: solid var(--webpage-colour-01) 3px;
   z-index: 3;
-  border: solid pink 3px;
 }
 
 .pokemonImageOverlay {
@@ -25,7 +32,7 @@
   background-image: url("../../../public/pokedex.png");
   background-size: cover;
   border: solid var(--webpage-colour-01) 3px;
-  display: flex;
+  z-index: 3;
 }
 
 .meetImageOverlay {
@@ -85,20 +92,16 @@
 @keyframes buttonScale {
   from {
     transform: scale(1);
-    /* width: 20%;
-    height: 10%; */
   }
 
   to {
     transform: scale(1.1);
-    /* width: 22%;
-    height: 11%; */
   }
 }
 
 .carouselButton {
   box-sizing: border-box;
-  background-color: var(--webpage-button-solid);
+  background-color: var(--webpage-colour-03);
   color: var(--webpage-white);
   font-size: 17px;
   border: none;
@@ -117,7 +120,6 @@
   height: 10%;
   border: white 3px solid;
   position: absolute;
-  /* animation: 1s buttonScale infinite alternate linear; */
 }
 
 .moreInfoContainer {
@@ -127,9 +129,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: rgba(0, 0, 0, 0.363); */
   z-index: 3;
-  border: solid red 3px;
 }
 
 .moreInfo {
