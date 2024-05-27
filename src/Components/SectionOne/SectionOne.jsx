@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-scroll";
+import styles from "./SectionOne.module.css";
 
 function SectionOne({
   setAbout,
@@ -11,7 +12,6 @@ function SectionOne({
   homeClicked,
   contactClicked,
   aboutClicked,
-  work,
 }) {
   const [visible, setVisible] = useState(true);
   const domRefHome = useRef();
@@ -58,18 +58,20 @@ function SectionOne({
   return (
     <div
       className={
-        visible ? "landingPageContainer" : "landingPageContainerReveal"
+        visible
+          ? styles.landingPageContainer
+          : styles.landingPageContainerReveal
       }
       id="#sectionOne"
     >
-      <div className="sectionOneTextContainer">
-        <h1 className="sectionOneHeading" ref={domRefHome}>
-          Hello World{" "}
+      <div className={styles.sectionOneTextContainer}>
+        <h1 className={styles.sectionOneHeading} ref={domRefHome}>
+          Hello World
         </h1>
-        <h2 className="sectionOneSlogan">
-          My name is Chris Bond. I am a web developer from the UK
+        <h2 className={styles.sectionOneSlogan}>
+          My name is Chris. I am a web developer from the UK
         </h2>
-        <p className="sectionOneText">Check out some of my code below</p>
+        <p className={styles.sectionOneText}>Check out some of my code below</p>
 
         <Link
           to="#sectionThree"
@@ -78,24 +80,24 @@ function SectionOne({
           offset={-100}
           id={
             homeClicked || workClicked || aboutClicked || contactClicked
-              ? "navbarButtonCopy"
+              ? styles.navbarButtonCopy
               : null
           }
-          className="projectsButton"
+          className={styles.projectsButton}
           onClick={handleProjectClick}
         >
           Projects
         </Link>
       </div>
-      <div className="profilePicContainer">
+      <div className={styles.profilePicContainer}>
         <img
           src="portrait.jpeg"
           alt="profile Pic"
-          className="profileImagePic"
+          className={styles.profileImagePic}
         />
       </div>
-      <div className="sectionOneWhite"></div>
-      <div className="sectionOneGrey"></div>
+      <div className={styles.sectionOneWhite}></div>
+      <div className={styles.sectionOneGrey}></div>
     </div>
   );
 }

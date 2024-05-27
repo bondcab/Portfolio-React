@@ -1,4 +1,5 @@
 import NavBarButtons from "./NavBarButtons";
+import styles from "./NavBar.module.css";
 
 function NavBar({
   setHome,
@@ -19,8 +20,8 @@ function NavBar({
   setAboutClicked,
 }) {
   return (
-    <div className="navBar">
-      <img src="logo_white.svg" alt="logo" className="logo" />
+    <div className={styles.navBar}>
+      <img src="logo_white.svg" alt="logo" className={styles.logo} />
       <NavBarButtons
         setHome={setHome}
         setAbout={setAbout}

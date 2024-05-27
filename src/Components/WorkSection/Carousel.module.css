@@ -1,0 +1,174 @@
+:root {
+  --webpage-white: white;
+  --webpage-colour-01: rgb(235, 235, 235);
+  --webpage-colour-02: rgb(116, 116, 116);
+  --webpage-colour-03: rgb(58, 58, 58);
+  --webpage-colour-04: rgba(201, 201, 201, 0.1);
+}
+
+.carousel {
+  width: 65%;
+}
+
+.buttonContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+}
+
+.bondFlixImageOverlay {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/bondApp2.png");
+  background-size: cover;
+  border: solid var(--webpage-colour-01) 3px;
+  z-index: 3;
+}
+
+.pokemonImageOverlay {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/pokedex.png");
+  background-size: cover;
+  border: solid var(--webpage-colour-01) 3px;
+  z-index: 3;
+}
+
+.meetImageOverlay {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/meet_04.png");
+  background-size: cover;
+  border: solid var(--webpage-colour-01) 3px;
+  display: flex;
+}
+
+.notesImageOverlay {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/notes_02.png");
+  background-size: cover;
+  border: solid var(--webpage-colour-01) 3px;
+  display: flex;
+}
+
+.angularImageOverlay {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/bondFlixAngular.png");
+  background-size: cover;
+  border: solid var(--webpage-colour-01) 3px;
+  display: flex;
+}
+
+.chatImageOverlay {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/chat_background.png");
+  background-size: cover;
+  border: solid var(--webpage-colour-01) 3px;
+  display: flex;
+}
+
+.apiImageOverlay {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/API_02.png");
+  background-size: cover;
+  border: solid var(--webpage-colour-01) 3px;
+  display: flex;
+}
+
+.dotContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@keyframes buttonScale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.carouselButton {
+  box-sizing: border-box;
+  background-color: var(--webpage-colour-03);
+  color: var(--webpage-white);
+  font-size: 17px;
+  border: none;
+  border-radius: 15px;
+  margin: 3%;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 6;
+  align-self: flex-end;
+  width: 20%;
+  height: 10%;
+  border: white 3px solid;
+  position: absolute;
+}
+
+.moreInfoContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.moreInfo {
+  background-color: white;
+  width: 80%;
+  height: 70%;
+  border-radius: 30px;
+  transform: translateY(-8%);
+}
+
+.projectTitles {
+  text-align: center;
+  font-size: 30px;
+}
+
+.workText {
+  font-weight: 600;
+  font-size: 20px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.buttonText {
+  box-sizing: border-box;
+  color: var(--webpage-white);
+  font-size: 17px;
+  border: none;
+  border-radius: 15px;
+  margin: 3%;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 8;
+  align-self: flex-end;
+  width: 20%;
+  height: 10%;
+  position: absolute;
+}

@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+import styles from "./NavBarButtons.module.css";
 
 function NavBarButtons({
   setHome,
@@ -73,8 +74,8 @@ function NavBarButtons({
   }
 
   return (
-    <div className="navButtonsContainer">
-      <div className="navButtons">
+    <div className={styles.navButtonsContainer}>
+      <div className={styles.navButtons}>
         <Link
           to="#sectionOne"
           smooth={true}
@@ -84,7 +85,7 @@ function NavBarButtons({
               ? "navbarButtonCopy"
               : null
           }
-          className={home ? "navbarHomeSelected" : "navbarButton"}
+          className={home ? styles.navbarHomeSelected : styles.navbarButton}
           onClick={handleHomeClick}
         >
           Home
@@ -96,10 +97,10 @@ function NavBarButtons({
           offset={-100}
           id={
             homeClicked || workClicked || aboutClicked || contactClicked
-              ? "navbarButtonCopy"
+              ? styles.navbarButtonCopy
               : null
           }
-          className={about ? "navbarAboutSelected" : "navbarButton"}
+          className={about ? styles.navbarAboutSelected : styles.navbarButton}
           onClick={handleAboutClick}
         >
           About
@@ -111,24 +112,27 @@ function NavBarButtons({
           offset={-100}
           id={
             homeClicked || workClicked || aboutClicked || contactClicked
-              ? "navbarButtonCopy"
+              ? styles.navbarButtonCopy
               : null
           }
-          className={work ? "navbarWorkSelected" : "navbarButton"}
+          className={work ? styles.navbarWorkSelected : styles.navbarButton}
           onClick={handleWorkClick}
         >
           Work
         </Link>
+
         <Link
           to="#sectionFour"
           smooth={true}
           duration={500}
           id={
             homeClicked || workClicked || aboutClicked || contactClicked
-              ? "navbarButtonCopy"
+              ? styles.navbarButtonCopy
               : null
           }
-          className={contact ? "navbarContactSelected" : "navbarButton"}
+          className={
+            contact ? styles.navbarContactSelected : styles.navbarButton
+          }
           onClick={handleContactClick}
         >
           Contact
