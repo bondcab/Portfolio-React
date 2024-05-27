@@ -42,7 +42,7 @@ function SectionFour({ setAbout, setHome, setContact, setWork }) {
             Contact
           </h2>
 
-          <p className="contactInfoText">
+          <p className="phoneText">
             <span className="bold">Phone:</span>{" "}
             <span className="hidden">...</span>07787541167
           </p>

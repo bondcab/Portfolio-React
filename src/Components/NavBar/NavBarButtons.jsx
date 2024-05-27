@@ -120,6 +120,7 @@ function NavBarButtons({
         >
           Work
         </Link>
+
         <Link
           to="#sectionFour"
           smooth={true}

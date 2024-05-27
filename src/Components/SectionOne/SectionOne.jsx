@@ -12,7 +12,6 @@ function SectionOne({
   homeClicked,
   contactClicked,
   aboutClicked,
-  work,
 }) {
   const [visible, setVisible] = useState(true);
   const domRefHome = useRef();

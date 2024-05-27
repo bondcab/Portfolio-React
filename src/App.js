@@ -43,7 +43,6 @@ function App() {
         setContact={setContact}
         setWork={setWork}
         setWorkClicked={setWorkClicked}
-        work={work}
       />
       <SectionTwo
         setHome={setHome}

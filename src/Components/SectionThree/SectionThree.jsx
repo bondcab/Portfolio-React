@@ -354,7 +354,11 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="ToDo.png" alt="api" className={styles.apiImage} />
+                  <img
+                    src="notes_02.png"
+                    alt="api"
+                    className={styles.apiImage}
+                  />
                 </a>
               </div>
             </div>
@@ -431,7 +435,7 @@ function SectionThree({ setAbout, setHome, setContact, setWork }) {
                   rel="noreferrer"
                 >
                   <img
-                    src="meet.png"
+                    src="meet_04.png"
                     alt="bondFlix-react"
                     className={styles.reactImage}
                   />

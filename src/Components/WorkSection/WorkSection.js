@@ -10,7 +10,7 @@ import MoreInfoChat from "./MoreInfoChat";
 import MoreInfoApi from "./MoreInfoApi";
 
 function WorkSection({ setAbout, setHome, setContact, setWork }) {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const domRefWork = useRef();
 
   const [moreInfoClicked, setMoreInfoClicked] = useState(false);
@@ -24,7 +24,6 @@ function WorkSection({ setAbout, setHome, setContact, setWork }) {
   const [carouselPlaying, setCarouselPlaying] = useState(true);
 
   function handleBackgroundClick() {
-    console.log("Background clicked");
     setInfoReact(false);
     setInfoPokemon(false);
     setInfoMeet(false);

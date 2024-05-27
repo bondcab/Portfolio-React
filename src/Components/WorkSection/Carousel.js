@@ -69,7 +69,7 @@ function Carousel({
       isPlaying={carouselPlaying}
       interval={5000}
     >
-      <Slider>
+      <Slider id="#sectionThree">
         <Slide index={0}>
           <div className={styles.buttonContainer}>
             <button
