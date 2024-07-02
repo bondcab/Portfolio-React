@@ -59,6 +59,10 @@ function Carousel({
     setInfoApi(true);
   }
 
+  function handleBondImageClick() {
+    console.log("Bond Image Clicked");
+  }
+
   return (
     <CarouselProvider
       naturalSlideWidth={100}
@@ -70,7 +74,16 @@ function Carousel({
     >
       <Slider id="#sectionThree">
         <Slide index={0}>
-          <div className={styles.buttonContainer}>
+          <div className={styles.bondFlixImageOverlay}>
+            <a
+              href="https://mybond-flix.netlify.app/login"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.siteLink}
+            >
+              <div className={styles.bondLink}></div>
+            </a>
+
             <button
               className={styles.carouselButton}
               onClick={handleReactBondButtonClick}
@@ -78,16 +91,17 @@ function Carousel({
               More Info
             </button>
           </div>
-          <a
-            href="https://mybond-flix.netlify.app/login"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className={styles.bondFlixImageOverlay}></div>
-          </a>
         </Slide>
         <Slide index={1}>
-          <div className={styles.buttonContainer}>
+          <div className={styles.pokemonImageOverlay}>
+            <a
+              href="https://bondcab.github.io/Pokemon_App/"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.siteLink}
+            >
+              <div className={styles.bondLink}></div>
+            </a>
             <button
               className={styles.carouselButton}
               onClick={handlePokemonButtonClick}
@@ -95,10 +109,17 @@ function Carousel({
               More Info
             </button>
           </div>
-          <div className={styles.pokemonImageOverlay}></div>
         </Slide>
         <Slide index={2}>
-          <div className={styles.buttonContainer}>
+          <div className={styles.meetImageOverlay}>
+            <a
+              href="https://bondcab.github.io/Meet/"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.siteLink}
+            >
+              <div className={styles.bondLink}></div>
+            </a>
             <button
               className={styles.carouselButton}
               onClick={handleMeetButtonClick}
@@ -106,16 +127,17 @@ function Carousel({
               More Info
             </button>
           </div>
-          <a
-            href="https://github.com/bondcab/myBondFlix-client"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className={styles.meetImageOverlay}></div>
-          </a>
         </Slide>
         <Slide index={3}>
-          <div className={styles.buttonContainer}>
+          <div className={styles.notesImageOverlay}>
+            <a
+              href="https://cbond-todolist-application.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.siteLink}
+            >
+              <div className={styles.bondLink}></div>
+            </a>
             <button
               className={styles.carouselButton}
               onClick={handleNotesButtonClick}
@@ -126,7 +148,15 @@ function Carousel({
           <div className={styles.notesImageOverlay}></div>
         </Slide>
         <Slide index={4}>
-          <div className={styles.buttonContainer}>
+          <div className={styles.angularImageOverlay}>
+            <a
+              href="https://bondcab.github.io/myBondFlix-Angular-client/welcome"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.siteLink}
+            >
+              <div className={styles.bondLink}></div>
+            </a>
             <button
               className={styles.carouselButton}
               onClick={handleAngularButtonClick}
@@ -134,10 +164,17 @@ function Carousel({
               More Info
             </button>
           </div>
-          <div className={styles.angularImageOverlay}></div>
         </Slide>
         <Slide index={5}>
-          <div className={styles.buttonContainer}>
+          <div className={styles.chatImageOverlay}>
+            <a
+              href="https://github.com/bondcab/Chat_Away"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.siteLink}
+            >
+              <div className={styles.bondLink}></div>
+            </a>
             <button
               className={styles.carouselButton}
               onClick={handleChatButtonClick}
@@ -145,10 +182,17 @@ function Carousel({
               More Info
             </button>
           </div>
-          <div className={styles.chatImageOverlay}></div>
         </Slide>
         <Slide index={6}>
-          <div className={styles.buttonContainer}>
+          <div className={styles.apiImageOverlay}>
+            <a
+              href="https://github.com/bondcab/myBondFlix-API"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.siteLink}
+            >
+              <div className={styles.bondLink}></div>
+            </a>
             <button
               className={styles.carouselButton}
               onClick={handleApiButtonClick}
@@ -156,7 +200,6 @@ function Carousel({
               More Info
             </button>
           </div>
-          <div className={styles.apiImageOverlay}></div>
         </Slide>
       </Slider>
       <div className={styles.dotContainer}>
