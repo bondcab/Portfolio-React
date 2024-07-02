@@ -59,10 +59,6 @@ function Carousel({
     setInfoApi(true);
   }
 
-  function handleBondImageClick() {
-    console.log("Bond Image Clicked");
-  }
-
   return (
     <CarouselProvider
       naturalSlideWidth={100}
